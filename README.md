@@ -1,6 +1,6 @@
 # Semantically Incongruent or Congruent Eggplants – Revised Analysis
 
-A re-analysis of [Pernet et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9540983/).
+A re-analysis of [Toffolo et al. (2022)](https://pmc.ncbi.nlm.nih.gov/articles/PMC9540983/).
 
 This repository contains Python and MATLAB code to re-analyze the EEG data
 by regressing per-trial linguistic metrics on the EEG signal using
