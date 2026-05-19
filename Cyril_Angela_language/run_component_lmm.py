@@ -69,16 +69,19 @@ COMPONENT_WINDOWS = {
         "time_min": 0.150,
         "time_max": 0.250,
         "roi": ["Pz", "POz", "Oz", "O1", "O2", "PO3", "PO4"],
+        "coordinate_roi": "posterior_occipital",
     },
     "N400": {
         "time_min": 0.300,
         "time_max": 0.500,
         "roi": ["Cz", "CPz", "Pz", "CP1", "CP2", "P3", "P4"],
+        "coordinate_roi": "centro_parietal",
     },
     "LPC": {
         "time_min": 0.500,
         "time_max": 0.800,
         "roi": ["Pz", "CPz", "Cz", "P3", "P4", "CP1", "CP2"],
+        "coordinate_roi": "centro_parietal_posterior",
     },
 }
 
@@ -196,6 +199,116 @@ def zscore(series: pd.Series) -> pd.Series:
 def normalise_channel_name(channel: str) -> str:
     return str(channel).strip()
 
+def clean_channel_label(value: str) -> str:
+    """
+    Clean channel labels.
+    """
+    value = str(value).strip().strip("'").strip('"')
+
+    if "_" in value:
+        return value.split("_", 1)[1].strip()
+
+    return value
+
+
+def has_coordinate_columns(df: pd.DataFrame) -> bool:
+    """
+    Check whether ERP long file has coordinate columns from export_erp_long.py.
+    """
+    required = {"x", "y", "z"}
+
+    return required.issubset(set(df.columns))
+
+
+def select_coordinate_roi(df: pd.DataFrame, roi_name: str) -> pd.Series:
+    """
+    Select approximate ERP scalp ROIs using electrode coordinates.
+
+    Coordinate assumptions follow the exported electrode file:
+        x = left/right
+        y = anterior/posterior
+        z = inferior/superior
+    """
+
+    x = pd.to_numeric(df["x"], errors="coerce")
+    y = pd.to_numeric(df["y"], errors="coerce")
+    z = pd.to_numeric(df["z"], errors="coerce")
+
+    abs_x = x.abs()
+
+    valid = x.notna() & y.notna() & z.notna()
+
+    if roi_name == "posterior_occipital":
+        # RP: posterior/parietal-occipital.
+        # Select posterior and high/mid scalp electrodes.
+        return valid & (y < 0) & (z > 0.25)
+
+    if roi_name == "centro_parietal":
+        # N400: central to parietal, near midline but not only Cz/Pz.
+        return valid & (abs_x < 0.65) & (y <= 0.35) & (y >= -0.75) & (z > 0.25)
+
+    if roi_name == "centro_parietal_posterior":
+        # LPC: centro-parietal/posterior.
+        return valid & (abs_x < 0.75) & (y <= 0.15) & (y >= -0.90) & (z > 0.20)
+
+    raise ValueError(f"Unknown coordinate ROI: {roi_name}")
+
+
+def select_component_rows(chunk: pd.DataFrame, component: str) -> pd.DataFrame:
+    """
+    Select rows belonging to a component using:
+    1. time window
+    2. named ROI labels
+    3. coordinate-based fallback
+    """
+
+    spec = COMPONENT_WINDOWS[component]
+
+    time_mask = (
+        (chunk["time"] >= spec["time_min"])
+        & (chunk["time"] <= spec["time_max"])
+    )
+
+    time_chunk = chunk.loc[time_mask].copy()
+
+    if time_chunk.empty:
+        return time_chunk
+
+    time_chunk["channel_clean"] = time_chunk["channel"].map(clean_channel_label)
+
+    name_mask = time_chunk["channel_clean"].isin(spec["roi"])
+
+    named = time_chunk.loc[name_mask].copy()
+
+    # If at least two named ROI channels exist, use them.
+    if named["channel_clean"].nunique(dropna=True) >= 2:
+        log.info(
+            "%s: using named ROI channels: %s",
+            component,
+            sorted(named["channel_clean"].dropna().unique()),
+        )
+        return named
+
+    # Otherwise use coordinates if available.
+    if has_coordinate_columns(time_chunk):
+        coord_mask = select_coordinate_roi(
+            time_chunk,
+            spec["coordinate_roi"],
+        )
+
+        coord_selected = time_chunk.loc[coord_mask].copy()
+
+        if not coord_selected.empty:
+            log.info(
+                "%s: using coordinate ROI fallback: %d channels",
+                component,
+                coord_selected["channel"].nunique(dropna=True),
+            )
+            return coord_selected
+
+    # If coordinates are absent, return whatever named channels were found.
+    return named
+
 
 def load_predictors(path: Path) -> pd.DataFrame:
     pred = pd.read_csv(path)
@@ -224,8 +337,13 @@ def component_average_chunked(
 ) -> pd.DataFrame:
     """
     Compute component mean amplitude without loading the full ERP table.
+
+    Uses:
+        1. component time window
+        2. named ROI labels
+        3. coordinate-based ROI fallback when names are incomplete
     """
-    spec = COMPONENT_WINDOWS[component]
+
     y = f"{component}_amplitude"
 
     required_cols = [
@@ -257,11 +375,10 @@ def component_average_chunked(
         chunk["time"] = pd.to_numeric(chunk["time"], errors="coerce")
         chunk["amplitude"] = pd.to_numeric(chunk["amplitude"], errors="coerce")
 
-        sub = chunk[
-            (chunk["time"] >= spec["time_min"])
-            & (chunk["time"] <= spec["time_max"])
-            & (chunk["channel"].isin(spec["roi"]))
-        ].copy()
+        sub = select_component_rows(
+            chunk=chunk,
+            component=component,
+        )
 
         if sub.empty:
             continue
@@ -285,7 +402,7 @@ def component_average_chunked(
     if not partials:
         raise ValueError(
             f"No ERP rows found for component {component}. "
-            f"Check time units and channel labels."
+            f"Check time units, channel labels, and coordinate columns."
         )
 
     all_partial = pd.concat(partials, ignore_index=True)
