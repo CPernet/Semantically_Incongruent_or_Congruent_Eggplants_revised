@@ -212,26 +212,24 @@ def load_electrode_coordinates(bids_root: Path) -> pd.DataFrame:
 def load_subject_channel_metadata(bids_root: Path, subject: str) -> pd.DataFrame:
     """
     Load subject channels.tsv.
-
-    Example:
-        sub-01/eeg/sub-01_task-N400Stimset_channels.tsv
-
-    This gives labels like:
-        A1_Cz
-        A19_Pz
-        A23_Oz
     """
 
-    channels_path = (
-        bids_root
-        / subject
-        / "eeg"
-        / f"{subject}_task-N400Stimset_channels.tsv"
-    )
+    possible_paths = [
+        bids_root / subject / "eeg" / f"{subject}_task-N400Stimset_channels.tsv",
+        bids_root / subject / f"{subject}_task-N400Stimset_channels.tsv",
+    ]
 
-    if not channels_path.exists():
+    channels_path = None
+
+    for path in possible_paths:
+        if path.exists():
+            channels_path = path
+            break
+
+    if channels_path is None:
         raise FileNotFoundError(
-            f"Channels file not found: {channels_path}"
+            "Channels file not found. Checked:\n"
+            + "\n".join(str(path) for path in possible_paths)
         )
 
     channels = pd.read_csv(channels_path, sep="\t")
