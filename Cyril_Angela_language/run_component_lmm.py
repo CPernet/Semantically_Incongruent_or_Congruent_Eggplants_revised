@@ -45,7 +45,18 @@ from typing import Optional
 import numpy as np
 import pandas as pd
 import statsmodels.formula.api as smf
+try:
+    from deepchecks.tabular import Dataset
+    from deepchecks.tabular.suites import data_integrity
+    DEEPCHECKS_AVAILABLE = True
+except ImportError:
+    DEEPCHECKS_AVAILABLE = False
 
+try:
+    import wandb
+    WANDB_AVAILABLE = True
+except ImportError:
+    WANDB_AVAILABLE = False
 
 # ---------------------------------------------------------------------
 # Logging
@@ -458,12 +469,25 @@ def prepare_model_dataframe(
 
     df = comp.merge(pred, on=merge_keys, how="left", suffixes=("", "_pred"))
 
-    missing_predictor_rows = df[DEFAULT_PREDICTORS].isna().all(axis=1).sum() if any(
-        p in df.columns for p in DEFAULT_PREDICTORS
-    ) else len(df)
+    available_default_predictors = [
+        p for p in DEFAULT_PREDICTORS if p in df.columns
+    ]
+
+    if available_default_predictors:
+        missing_predictor_rows = (
+            df[available_default_predictors]
+            .isna()
+            .all(axis=1)
+            .sum()
+        )
+    else:
+        missing_predictor_rows = len(df)
 
     log.info("Merged model rows: %d", len(df))
-    log.info("Rows with all default predictors missing: %d", missing_predictor_rows)
+    log.info(
+        "Rows with all available default predictors missing: %d",
+        missing_predictor_rows,
+    )
 
     model_data_path = output_dir / f"model_data_{component}.csv"
     df.to_csv(model_data_path, index=False)
@@ -579,6 +603,21 @@ def build_formula(
 
     return formula
 
+def formula_required_columns(formula: str, df: pd.DataFrame) -> list[str]:
+    """
+    Extract dataframe column names that appear in the model formula.
+    """
+
+    columns = []
+
+    for col in df.columns:
+        plain_pattern = rf"(?<![A-Za-z0-9_]){re.escape(col)}(?![A-Za-z0-9_])"
+        categorical_pattern = rf"C\({re.escape(col)}\)"
+
+        if re.search(plain_pattern, formula) or re.search(categorical_pattern, formula):
+            columns.append(col)
+
+    return sorted(set(columns))
 
 def fit_mixed_model(df: pd.DataFrame, formula: str, outcome: str):
     """
@@ -588,6 +627,7 @@ def fit_mixed_model(df: pd.DataFrame, formula: str, outcome: str):
         groups = subject
         item variance component if item is available
     """
+
     required = [outcome, "subject"]
 
     for col in required:
@@ -596,16 +636,26 @@ def fit_mixed_model(df: pd.DataFrame, formula: str, outcome: str):
 
     model_df = df.copy()
 
-    model_df = model_df.dropna(subset=[outcome, "subject"])
+    formula_cols = formula_required_columns(formula, model_df)
+
+    drop_cols = sorted(set([outcome, "subject"] + formula_cols))
+
+    log.info("Dropping rows with missing values in model columns: %s", drop_cols)
+
+    model_df = model_df.dropna(subset=drop_cols)
 
     if len(model_df) < 10:
-        raise ValueError("Too few rows for model after dropping missing outcome/subject.")
+        raise ValueError(
+            "Too few rows for model after dropping missing outcome, subject, "
+            "or predictor values."
+        )
 
     vc = {}
 
     if "item" in model_df.columns:
         vc["item"] = "0 + C(item)"
 
+    log.info("Rows used in final model: %d", len(model_df))
     log.info("Fitting formula:")
     log.info(formula)
 
@@ -625,6 +675,121 @@ def fit_mixed_model(df: pd.DataFrame, formula: str, outcome: str):
 
     return result, model_df
 
+def run_deepchecks_before_model(
+    df: pd.DataFrame,
+    component: str,
+    output_dir: Path,
+    outcome: str,
+) -> None:
+    """
+    Run Deepchecks on the merged ERP-component + language-predictor table
+    before fitting the mixed model.
+    If Deepchecks fails, the mixed model still continues.
+    """
+
+    if not DEEPCHECKS_AVAILABLE:
+        log.warning("Deepchecks is not installed. Skipping data-integrity checks.")
+        return
+
+    try:
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        categorical_columns = [
+            col for col in ["subject", "condition", "item", "trial"]
+            if col in df.columns
+        ]
+
+        dataset = Dataset(
+            df,
+            label=outcome,
+            cat_features=categorical_columns,
+        )
+
+        suite = data_integrity()
+        result = suite.run(dataset)
+
+        report_path = output_dir / f"deepchecks_{component}_before_model.html"
+        result.save_as_html(str(report_path))
+
+        log.info("Saved Deepchecks report: %s", report_path)
+
+    except Exception as error:
+        log.warning(
+            "Deepchecks failed for %s, but modelling will continue. Error: %s",
+            component,
+            error,
+        )
+
+
+def log_mixed_model_to_wandb(
+    component: str,
+    formula: str,
+    result,
+    model_df: pd.DataFrame,
+    output_dir: Path,
+    summary_path: Path,
+    coefficients_path: Path,
+    wandb_project: str = "Cyril_Angela_language",
+    wandb_run_name: str | None = None,
+    wandb_mode: str = "offline",
+) -> None:
+    """
+    Log fitted mixed-model results to W&B after modelling.
+
+    If W&B fails, the saved model outputs remain intact.
+    """
+
+    if not WANDB_AVAILABLE:
+        log.warning("wandb is not installed. Skipping W&B logging.")
+        return
+
+    try:
+        run = wandb.init(
+            project=wandb_project,
+            name=wandb_run_name or f"{component}_mixed_model",
+            mode=wandb_mode,
+            config={
+                "component": component,
+                "formula": formula,
+                "rows_used": int(len(model_df)),
+                "output_dir": str(output_dir),
+            },
+        )
+
+        run.log({
+            f"{component}/aic": float(result.aic),
+            f"{component}/bic": float(result.bic),
+            f"{component}/rows_used": int(len(model_df)),
+            f"{component}/converged": int(result.converged),
+            f"{component}/n_parameters": int(len(result.params)),
+        })
+
+        for predictor, beta in result.params.items():
+            try:
+                run.log({
+                    f"{component}/beta/{predictor}": float(beta)
+                })
+            except Exception:
+                continue
+
+        run.config.update({
+            f"{component}_formula": formula
+        })
+
+        if summary_path.exists():
+            run.save(str(summary_path))
+
+        if coefficients_path.exists():
+            run.save(str(coefficients_path))
+
+        wandb.finish()
+
+    except Exception as error:
+        log.warning(
+            "W&B logging failed for %s, but model outputs were already saved. Error: %s",
+            component,
+            error,
+        )
 
 def run_component(
     erp_long_path: Path,
@@ -653,6 +818,13 @@ def run_component(
     )
 
     outcome = f"{component}_amplitude"
+
+    run_deepchecks_before_model(
+        df=df,
+        component=component,
+        output_dir=output_dir,
+        outcome=outcome,
+    )
 
     selected = select_predictors(df, requested_predictors)
 
@@ -684,7 +856,7 @@ def run_component(
     with open(formula_path, "w", encoding="utf-8") as f:
         f.write(formula)
 
-    coef = pd.DataFrame(
+    coefficients = pd.DataFrame(
         {
             "term": result.params.index,
             "estimate": result.params.values,
@@ -692,14 +864,27 @@ def run_component(
     )
 
     if hasattr(result, "bse"):
-        coef["std_error"] = result.bse.values
+        coefficients["std_error"] = result.bse.reindex(result.params.index).values
 
     if hasattr(result, "pvalues"):
-        coef["p_value"] = result.pvalues.values
+        coefficients["p_value"] = result.pvalues.reindex(result.params.index).values
 
-    coef.to_csv(coefficients_path, index=False)
+    coefficients.to_csv(coefficients_path, index=False)
 
     model_df.to_csv(used_data_path, index=False)
+
+    log_mixed_model_to_wandb(
+        component=component,
+        formula=formula,
+        result=result,
+        model_df=model_df,
+        output_dir=output_dir,
+        summary_path=summary_path,
+        coefficients_path=coefficients_path,
+        wandb_project="Cyril_Angela_language",
+        wandb_run_name=f"{component}_mixed_model",
+        wandb_mode="offline",
+    )
 
     print(result.summary())
     print(f"\nSaved summary: {summary_path}")
