@@ -49,7 +49,9 @@ try:
     from deepchecks.tabular import Dataset
     from deepchecks.tabular.suites import data_integrity
     DEEPCHECKS_AVAILABLE = True
-except ImportError:
+except Exception:
+    Dataset = None
+    data_integrity = None
     DEEPCHECKS_AVAILABLE = False
 
 try:
