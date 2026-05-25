@@ -1,0 +1,12 @@
+{
+"TaskName": "N400Stimset_closed-probability-survey",
+"TaskDescription": "participants were asked to provide a singular word that would correctly finish the given sentence",
+"Total Participants": 137,
+"Eliminated Participants": "54, 119, 135",
+"Total Participants in Anlaysis": 134,
+"Max Reponses Per Question": 134,
+"Max Cloze Probability": 1,
+"Average Percent Correct": 85.3,
+"STD Percent Correct": 11.1,
+"Participant Mean Age": 38.3
+}

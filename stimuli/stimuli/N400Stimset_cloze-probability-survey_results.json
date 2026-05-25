@@ -1,0 +1,21 @@
+{
+"#": {
+	"Description": "stimulus (sentence) order",
+ },
+ 
+"total_answers": {
+	"Description": "total number of questions answered by the survey participant",
+ },
+ 
+"correct_answers": {
+	"Description": "total correct answers by the survey participant",
+ },
+ 
+"sentential_context": {
+	"Description": "context given to participant",
+ },
+ 
+"key": {
+	"Description": "anticipated answer for the given context",
+ },
+}

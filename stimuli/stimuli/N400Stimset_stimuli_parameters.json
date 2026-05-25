@@ -1,0 +1,98 @@
+{
+"stim_key": {
+	"Description": "N400Stimset code (i.e. stimulus order in Toffolo et al. 2022)",
+ },
+ 
+"stim_file": {
+	"Description": "name of the auditory stimulus file presented",
+ },
+ 
+"1": {
+	"Description": "first word in the stimulus (sentence)",
+ },
+ 
+"2": {
+	"Description": "second word in the stimulus (sentence)",
+ },
+ 
+"3": {
+	"Description": "third word in the stimulus (sentence)",
+ },
+ 
+"4": {
+	"Description": "fourth word in the stimulus (sentence)",
+ },
+ 
+"5": {
+	"Description": "fifth word in the stimulus (sentence)",
+ },
+ 
+"6": {
+	"Description": "sixth word in the stimulus (sentence)",
+ },
+ 
+"7": {
+	"Description": "seventh word in the stimulus (sentence)",
+ },
+ 
+"8": {
+	"Description": "eighth word in the stimulus (sentence)",
+ },
+
+"known_word": {
+	"Description": "the known word (via the online word database) that the sentence stimulus was based off of",
+ },
+ 
+"stim_dur(s)": {
+	"Description": "the duration of the entire stimulus (sentence)",
+	"Units": "seconds"
+},
+
+"target_onset(s)": {
+	"Description": "the onset of the target word within a stimulus (final word at the end of a sentence)",
+	"Units": "seconds"
+ },
+ 
+"target_end": {
+	"Description": "the end of the target word within a stimulus",
+	"Units": "seconds"
+ },
+ 
+"target_dur": {
+	"Description": "the duration of the target word within a stimulus",
+	"Units": "seconds"
+ },
+ 
+"time-quarter_div": {
+	"Description": "what quarter of the experiment was the stimulus played",
+	"Units": "quarter of experiment"
+ },
+ 
+"order-group_div": {
+	"Description": "what order was the stimulus played",
+	"Levels": 
+		"1": "Congruent stimulus, where the congruent pair was presented before the incongruent pair",
+		"2": "Incongruent stimulus, where the congruent pair was presented before the incongruent pair",
+		"3": "Congruent stimulus, where the incongruent pair was presented before the congruent pair",
+		"4": "Incongruent stimulus, where the incongruent pair was presented before the congruent pair",
+ },
+ 
+"cloze-probability%_div": {
+	"Description": "cloze probability scores, or the % of the surveyed participants that responded with the anticipated congruent ending word",
+	"Units": "percent/100"
+ },
+ 
+"linguistic-group_div": {
+   "Description": "subdivision of stimuli based on syntactic error between a congruent and incongruent stimulus pair",
+   "Levels":
+		"1": "no syntactic error (congruent and incongruent expectation type matches)",
+		"2": "syntactic number error (expecting a plural noun but incongruent ending was a singular noun, or vice versa)",
+		"3": "syntactic adjective error (expecting an adjective but incongruent ending was a noun/verb, or vice versa)",
+		"4": "syntactic verb error (expecting a verb but incongruent ending was a noun, or vice versa)",
+		"5": "misc (stimulus pair contained cultural references, or the incongruent ending did not match congruent ending in syllable number, contained hyphenated phrases, or could be congruent)",
+ },	
+ 
+"linguistic-group_reasoning": {
+	"Description": "specific reasoning for linguistic division category",
+ },
+}

@@ -1,0 +1,443 @@
+stim_key	stim_file	1	2	3	4	5	6	7	8	known_word	stim_dur(s)	target_onset(s)	target_end(s)	target_dur(s)	time-quarter_div	order-group_div	cloze-probability%_div	linguistic-group_div	linguistic-group_reasoning
+sound1	NPC_bake.wav	The	cake	is	in	the	oven	to	bake.	bake	3.578784	3.117626	3.548376	0.43075	1	1	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound2	NPC_cat.wav	Meow	goes	the	cat.	n/a	n/a	n/a	n/a	cat	1.856939	1.408013	1.820172	0.412159	1	1	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound3	NPI_car(chest).wav	He	puts	gas	in	his	chest.	n/a	n/a	gas	2.615079	2.162985	2.56786	0.404875	1	4	0.727272727	1	Expectation not disrupted/Congruent and incongruent type match
+sound4	NPI_outside(apple).wav	He	put	on	his	shoes	to	go	apple.	boot(shoes)	3.466553	2.977523	3.413498	0.435975	1	4	0.583333333	3	Adjective then noun
+sound5	NPC_freeze.wav	In	the	winter	the	pond	will	freeze.	n/a	freeze	2.99288	2.473696	2.967768	0.494072	1	1	0.9609375	4	Verb then noun
+sound6	NPC_goal.wav	The	soccer	team	scored	a	goal.	n/a	n/a	goal	2.409524	1.95687	2.370985	0.414115	1	1	0.9453125	1	Expectation not disrupted/Congruent and incongruent type match
+sound7	NPI_cob(lie).wav	She	eats	corn	on	the	lie.	n/a	n/a	corn	2.476508	2.044826	2.446868	0.402042	1	4	0.9375	1	Expectation not disrupted/Congruent and incongruent type match
+sound8	NPI_pants(woods).wav	He	pulled	up	his	woods.	n/a	n/a	n/a	pants	2.241315	1.753511	2.18591	0.432399	1	4	0.666666667	1	Expectation not disrupted/Congruent and incongruent type match
+sound9	NPI_cribs(shot).wav	Babies	sleep	in	shot.	n/a	n/a	n/a	n/a	crib	2.073605	1.537316	2.04084	0.503524	1	4	0.694029851	2	Expecting a plural
+sound10	NPC_bank.wav	My	mom	puts	money	in	the	bank.	n/a	bank	2.865488	2.448732	2.797464	0.348732	1	1	0.852713178	1	Expectation not disrupted/Congruent and incongruent type match
+sound11	NPI_nice(gum).wav	The	opposite	of	mean	is	gum.	n/a	n/a	nice	2.610635	2.158009	2.570761	0.412752	1	4	0.720930233	3	Adjective then noun
+sound12	NPI_chalk(fat).wav	On	the	sidewalk	I	draw	with 	fat.	n/a	chalk	2.92941	2.492969	2.889515	0.396546	1	4	0.962686567	1	Expectation not disrupted/Congruent and incongruent type match
+sound13	(LD5_Eliminated)NPC_rings.wav	Before	school	starts	the	bell	rings.	n/a	n/a	bell	2.919683	2.362519	2.89538	0.532861	1	1	0.954887218	5	Does not match on syllable
+sound14	(LD5_Eliminated)NPI_school(cut).wav	Jeff	is	too	cool	for	cut.	n/a	n/a	cool	2.734331	2.308151	2.710162	0.402011	1	4	0.798449612	5	Cultural ideom
+sound15	NPI_fight(mouse).wav	The	angry	boys	got	in	a	mouse.	n/a	fight	2.934989	2.487868	2.879934	0.392066	1	4	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound16	NPI_desk(ice).wav	In	school	I	sit	at	a	ice.	n/a	desk	2.871678	2.387949	2.832542	0.444593	1	4	0.858208955	4	Grammatically incorrect
+sound17	NPI_bake(milk).wav	The	cake	is	in	the	oven	to	milk.	bake	3.559002	3.113166	3.526956	0.41379	1	2	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound18	NPI_wood(cough).wav	He	chopped	the	cough.	n/a	n/a	n/a	n/a	chop	1.689592	1.1938	1.659318	0.465518	1	4	0.455223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound19	NPI_gel(sign).wav	He	styled	his	hair	with	sign.	n/a	n/a	gel	2.518617	2.046125	2.501096	0.454971	1	4	0.69924812	1	Expectation not disrupted/Congruent and incongruent type match
+sound20	NPI_clues(year).wav	The	detectives	found	many	year.	n/a	n/a	n/a	clue	2.406757	1.91355	2.364594	0.451044	1	4	0.8515625	2	Expecting a plural
+sound21	(LD5_Eliminated)NPC_live.wav	The	woods	are	where	bears	live.	n/a	n/a	live	2.749161	2.314974	2.706524	0.39155	1	1	0.84496124	5	Truck becomes a verb so could make sense
+sound22	NPI_fist(bath).wav	I	punched	the	bag	with	my	bath.	n/a	fist	2.905283	2.516663	2.861434	0.344771	1	4	0.90625	1	Expectation not disrupted/Congruent and incongruent type match
+sound23	NPC_crust.wav	His	mom	makes	her	own	pie	crust.	n/a	crust	3.069819	2.592206	3.037097	0.444891	1	1	0.708661417	1	Expectation not disrupted/Congruent and incongruent type match
+sound24	NPI_chick(bruise).wav	A	baby	chicken	is	a	bruise.	n/a	n/a	chick	2.585488	2.089463	2.550232	0.460769	1	4	0.916666667	1	Expectation not disrupted/Congruent and incongruent type match
+sound25	NPC_bite.wav	He	had	an	itchy	bug	bite.	n/a	n/a	bite	2.501882	2.117599	2.461938	0.344339	1	1	0.937984496	3	Noun then adverb/adjective
+sound26	NPI_mouse(store).wav	The	cat	chased	the	store.	n/a	n/a	n/a	chase	2.136077	1.610534	2.090238	0.479704	1	4	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound27	NPC_stove.wav	He	burned	his	hand	on	the	stove.	n/a	stove/burn	3.255714	2.6024	3.234907	0.632507	1	1	0.787878788	1	Expectation not disrupted/Congruent and incongruent type match
+sound28	NPC_mouse.wav	The	cat	chased	the	mouse.	n/a	n/a	n/a	chase	2.117846	1.618936	2.102361	0.483425	1	3	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound29	NPI_solve(cloud).wav	He	had	a	mystery	to	cloud.	n/a	n/a	solve	2.752857	2.216487	2.708829	0.492342	1	4	0.914728682	4	Verb then noun
+sound30	NPI_bat(gel).wav	The	boy	hit	the	ball	with 	a	gel.	bat/ball/hit	3.716803	3.193225	3.68579	0.492565	1	4	0.902985075	1	Expectation not disrupted/Congruent and incongruent type match
+sound31	(LD5_Eliminated)NPI_bee(burn).wav	I	was	stung	by	a	buzzing	burn.	n/a	bee/buzz	3.186485	2.725763	3.09941	0.373647	1	4	0.970149254	5	Buzzing burn could make sense
+sound32	NPC_walk.wav	Babies	crawl	before	they	walk.	n/a	n/a	n/a	crawl	2.330771	1.973083	2.292241	0.319158	1	1	1	4	Verb then noun
+sound33	NPI_hands(king).wav	I	clap	my	king.	n/a	n/a	n/a	n/a	clap	1.925283	1.455632	1.906611	0.450979	1	4	0.984496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound34	NPI_beat(sneeze).wav	The	drummer	keeps	the	sneeze.	n/a	n/a	n/a	drum	2.258277	1.719045	2.218491	0.499446	1	4	0.7421875	1	Expectation not disrupted/Congruent and incongruent type match
+sound35	NPC_bowl.wav	He	pours	cereal	into	a	bowl.	n/a	n/a	bowl	2.808889	2.419001	2.769162	0.350161	1	1	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound36	NPC_boat.wav	We	went	fishing	on	a	boat.	n/a	n/a	boat	2.638401	2.140421	2.567314	0.426893	1	1	0.604651163	1	Expectation not disrupted/Congruent and incongruent type match
+sound37	NPC_wear.wav	She	had	no	clothes	to	wear.	n/a	n/a	wear	2.519546	2.131819	2.492763	0.360944	1	1	0.891472868	4	Verb then noun
+sound38	NPC_bulb.wav	Tom	replaced	the	light	bulb.	n/a	n/a	n/a	bulb	2.119955	1.780412	2.093944	0.313532	1	1	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound39	NPC_gills.wav	Fish	breathe	through	gills.	n/a	n/a	n/a	n/a	gill	1.906168	1.395928	1.894694	0.498766	1	1	0.9375	2	Expecting a plural
+sound40	NPI_bus(egg).wav	To	school	I	ride	the	yellow	egg.	n/a	bus	2.879252	2.584212	2.852247	0.268035	1	4	0.976744186	1	Expectation not disrupted/Congruent and incongruent type match
+sound41	NPC_frog.wav	Ribbit	goes	the	frog.	n/a	n/a	n/a	n/a	frog	1.989002	1.388158	1.94498	0.556822	1	1	0.946969697	1	Expectation not disrupted/Congruent and incongruent type match
+sound42	NPI_barn(claw).wav	The	farmer's	animals	live	in	the	claw.	n/a	barn	3.113855	2.651	3.07773	0.42673	1	4	0.8203125	1	Expectation not disrupted/Congruent and incongruent type match
+sound43	(LD5_Eliminated)NPC_holes.wav	My	dog	digs	holes.	n/a	n/a	n/a	n/a	dig	2.03415	1.47633	1.988321	0.511991	1	1	0.789473684	5	Dig spring could make sense as in "likes spring"
+sound44	NPC_nine.wav	The	number	before	ten	is	nine.	n/a	n/a	nine	2.732336	2.220966	2.680912	0.459946	1	1	0.984848485	1	Expectation not disrupted/Congruent and incongruent type match
+sound45	NPC_inches.wav	This	year	he	has	grown	two	inches.	n/a	grown	3.154694	2.563822	3.114902	0.55108	1	1	0.821705426	2	Expecting a plural
+sound46	NPI_bank(hike).wav	My	mom	puts	money	in	the	hike.	n/a	bank	2.889342	2.434196	2.870193	0.435997	1	2	0.852713178	1	Expectation not disrupted/Congruent and incongruent type match
+sound47	NPI_bricks(leg).wav	My	fireplace	is	made	of	red	leg.	n/a	brick/red	3.166599	2.810669	3.127656	0.316987	1	4	0.878787879	2	Expecting a plural
+sound48	NPC_bright.wav	I	wear	sunglasses	because	the	sun	is	bright.	bright	3.805873	3.354555	3.764339	0.409784	1	1	0.8515625	2	Gills is plural
+sound49	(LD5_Eliminated)NPC_bench.wav	He	liked	to	sit	on	the	park	bench.	bench	3.395267	2.956308	3.369679	0.413371	1	1	0.96124031	5	Grade of this hill could make sense
+sound50	NPC_phone.wav	He	called	Helen	on	the	phone.	n/a	n/a	call/phone	2.57737	2.10521	2.553429	0.448219	1	1	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound51	NPC_ants.wav	The	picnic	was	ruined	by	crawling	ants.	n/a	ant	3.282902	2.748146	3.249845	0.501699	1	1	0.834586466	1	Expectation not disrupted/Congruent and incongruent type match
+sound52	NPC_game.wav	His	dad	watches	the	football	game.	n/a	n/a	game	2.675624	2.256644	2.646189	0.389545	1	1	0.829457364	1	Expectation not disrupted/Congruent and incongruent type match
+sound53	NPI_flag(touch).wav	He	waves	an	American	touch.	n/a	n/a	n/a	flag	2.493152	2.002734	2.453855	0.451121	1	4	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound54	NPC_cart.wav	At	the	store	I	pushed	the	cart.	n/a	cart	3.067755	2.684747	2.915209	0.230462	1	1	0.828358209	1	Expectation not disrupted/Congruent and incongruent type match
+sound55	NPI_inches(cookie).wav	This	year	he	has	grown	two	cookie.	n/a	grown	3.115601	2.567849	3.064599	0.49675	1	2	0.821705426	2	Expecting a plural
+sound56	NPC_coach.wav	I	was	taught	by	my	soccer	coach.	n/a	coach	3.193719	2.603694	3.094107	0.490413	1	3	0.910447761	1	Expectation not disrupted/Congruent and incongruent type match
+sound57	NPI_popped(square).wav	The	water	balloon	was	so	full	it	square.	burst(popped)	3.691519	3.116814	3.665148	0.548334	1	4	0.15503876	4	Verb then noun
+sound58	NPI_ears(bee).wav	I	hear	with	my	bee.	n/a	n/a	n/a	ear	2.15381	1.76056	2.10972	0.34916	1	4	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound59	NPC_cheese.wav	Her	favorite	food	is	mac	and	cheese.	n/a	cheese	3.139864	2.546673	3.10583	0.559157	1	3	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound60	(LD5_Eliminated)NPC_pole.wav	Santa	lives	at	the	north	pole.	n/a	n/a	pole	2.860862	2.342483	2.798637	0.456154	1	1	1	5	Cultural and repeated incongruent target word
+sound61	NPI_fear(walk).wav	The	brave	man	had	no	walk.	n/a	n/a	fear/brave	2.556939	2.194728	2.536123	0.341395	1	4	0.8203125	1	Expectation not disrupted/Congruent and incongruent type match
+sound62	NPI_dare(brick).wav	Lets	play	truth	or	brick.	n/a	n/a	n/a	dare	1.986417	1.599904	1.96477	0.364866	1	4	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound63	NPI_grapes(man).wav	Raisins	are	dried	man.	n/a	n/a	n/a	n/a	grape/dry	2.130204	1.585914	2.104192	0.518278	1	4	0.891472868	2	Expecting a plural
+sound64	NPC_cow.wav	Farmers	milk	the	cows.	n/a	n/a	n/a	n/a	cow	1.912789	1.416757	1.89685	0.480093	1	1	0.917910448	1	Expectation not disrupted/Congruent and incongruent type match
+sound65	NPC_cold.wav	Winter	is	very	cold.	n/a	n/a	n/a	n/a	cold	1.715624	1.342095	1.687579	0.345484	1	3	0.868217054	3	Adjective then noun
+sound66	NPI_eyes(hip).wav	I	see	with	my	hip.	n/a	n/a	n/a	eye	2.097052	1.715975	2.05142	0.335445	1	4	0.954545455	1	Expectation not disrupted/Congruent and incongruent type match
+sound67	NPI_bed(frog).wav	At	night	I	sleep	in	my	frog.	n/a	bed	3.102449	2.654114	3.044322	0.390208	1	4	0.901515152	1	Expectation not disrupted/Congruent and incongruent type match
+sound68	NPI_freeze(sun).wav	In	the	winter	the	pond	will	sun.	n/a	freeze	2.94161	2.465281	2.914364	0.449083	1	2	0.9609375	4	Verb then noun
+sound69	NPC_door.wav	He	shut	the	door.	n/a	n/a	n/a	n/a	shut	1.606689	1.222226	1.58058	0.358354	1	1	0.945736434	1	Expectation not disrupted/Congruent and incongruent type match
+sound70	NPI_party(sidewalk).wav	He	had	fun	at	the	birthday	sidewalk.	n/a	fun	3.073061	2.414325	3.017248	0.602923	1	4	0.977099237	1	Expectation not disrupted/Congruent and incongruent type match
+sound71	NPC_snake.wav	Hiss	goes	the	snake.	n/a	n/a	n/a	n/a	snake	1.955283	1.415634	1.916171	0.500537	1	1	0.874015748	1	Expectation not disrupted/Congruent and incongruent type match
+sound72	NPI_foot(shout).wav	I	put	the	sock	on	my	shout.	n/a	foot	3.104512	2.604211	3.064683	0.460472	1	4	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound73	NPC_trees.wav	A	monkey	climbs	trees.	n/a	n/a	n/a	n/a	climb	1.822358	1.375378	1.77451	0.399132	1	1	0.821705426	2	Expecting a plural
+sound74	NPC_flag.wav	He	waves	an	American	flag.	n/a	n/a	n/a	flag	2.482789	2.001327	2.438782	0.437455	1	3	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound75	NPI_spider(summer).wav	There	are	eight	legs	on	a	summer.	n/a	eight	2.895986	2.44312	2.880923	0.437803	1	4	0.8984375	1	Expectation not disrupted/Congruent and incongruent type match
+sound76	(LD5_Eliminated)NPI_cleats(wood).wav	For	soccer	you	wear	wood.	n/a	n/a	n/a	cleat	2.243039	1.835713	2.218664	0.382951	1	4	0.618320611	5	Repeat incongruent target and cleats vs. spikes = cultural
+sound77	NPC_cape.wav	Superman	wears	a	red	cape.	n/a	n/a	n/a	cape	2.500907	2.021995	2.462386	0.440391	1	1	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound78	NPC_grapes.wav	Raisins	are	dried	grapes.	n/a	n/a	n/a	n/a	grape/dry	2.070317	1.581892	2.041129	0.459237	1	3	0.891472868	2	Expecting a plural
+sound79	NPC_gold.wav	Wedding	rings	are	made	of	gold.	n/a	n/a	gold	2.488594	2.13086	2.485209	0.354349	1	1	0.770992366	1	Expectation not disrupted/Congruent and incongruent type match
+sound80	NPC_wind.wav	My	hair	was	blown	by	the	wind.	n/a	wind	3.206327	2.74318	3.151788	0.408608	1	1	0.955223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound81	NPC_chest.wav	My	heart	was	pounding	in	my	chest.	n/a	chest	3.070045	2.545182	2.994099	0.448917	1	1	0.932835821	1	Expectation not disrupted/Congruent and incongruent type match
+sound82	NPC_friend.wav	I	play	with	my	best	friend.	n/a	n/a	friend	2.415034	1.940072	2.376932	0.43686	1	1	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound83	(LD5_Eliminated)NPC_bee.wav	I	was	stung	by	a	buzzing	bee.	n/a	bee/buzz	3.052018	2.727793	3.02545	0.297657	1	3	0.970149254	5	Buzzing burn could make sense
+sound84	NPC_flop.wav	At	the	pool	he	did	a	belly	flop.	flop	3.410703	2.910769	3.371427	0.460658	1	1	0.955223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound85	NPI_ghosts(strike).wav	The	house	was	haunted	by	strike.	n/a	n/a	ghost	2.598458	2.090004	2.573606	0.483602	1	4	0.930232558	2	Expecting a plural
+sound86	NPI_flip(dark).wav	On	the	trampoline	he	did	a	dark.	n/a	flip	3.007982	2.593404	2.84738	0.253976	1	4	0.803030303	3	Noun then adjective
+sound87	NPI_cream(couch).wav	I	spray	whipped	couch.	n/a	n/a	n/a	n/a	cream	1.889909	1.367551	1.850728	0.483177	1	4	0.977443609	1	Expectation not disrupted/Congruent and incongruent type match
+sound88	NPI_dust(cook).wav	The	old	table	was	covered	in	cook.	n/a	dust	2.91288	2.582802	2.882978	0.300176	1	4	0.46969697	4	Noun then verb
+sound89	NPC_car.wav	He	puts	gas	in	his	car.	n/a	n/a	gas	2.541905	2.165057	2.508062	0.343005	1	1	0.727272727	1	Expectation not disrupted/Congruent and incongruent type match
+sound90	NPI_gone(feet).wav	The	cookies	were	eaten	until	they	were	feet.	gone/eat	3.583299	3.130194	3.510326	0.380132	1	4	0.946969697	4	Verb then noun
+sound91	NPC_crafts.wav	I	like	arts	and	crafts.	n/a	n/a	n/a	craft	2.326984	1.751821	2.29218	0.540359	1	1	0.924242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound92	NPC_store.wav	We	buy	toys	at	the	toy	store.	n/a	buy/toy	3.160884	2.666389	3.130561	0.464172	1	1	0.906976744	1	Expectation not disrupted/Congruent and incongruent type match
+sound93	NPC_cop.wav	He	was	pulled	over	by	a	cop.	n/a	cop	2.812063	2.419938	2.788972	0.369034	1	1	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound94	NPC_castle.wav	A	princess	lives	in	a	castle.	n/a	n/a	castle	2.664422	2.165905	2.640994	0.475089	1	1	0.891472868	1	Expectation not disrupted/Congruent and incongruent type match
+sound95	NPC_out.wav	Three	strikes	and	you	are	out!	n/a	n/a	strike	2.67678	2.300626	2.665652	0.365026	1	1	0.976744186	4	Grammatically incorrect
+sound96	NPI_test(dust).wav	I	cheated	on	the	dust.	n/a	n/a	n/a	cheat	2.134717	1.654444	2.094773	0.440329	1	4	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound97	NPI_gloves(car).wav	On	his	hands	are	a	pair	of	car.	glove	3.396463	2.956404	3.356648	0.400244	1	4	0.854961832	2	Expecting a plural
+sound98	(LD5_Eliminated)NPC_roar.wav	The	lion	says	roar.	n/a	n/a	n/a	n/a	roar/say	1.928163	1.422959	1.908758	0.485799	1	1	0.938931298	5	Could make sense if lion is animated
+sound99	NPC_cream.wav	I	spray	whipped	cream.	n/a	n/a	n/a	n/a	cream	1.907302	1.362122	1.869498	0.507376	1	1	0.977443609	1	Expectation not disrupted/Congruent and incongruent type match
+sound100	NPC_aisle.wav	The	bride	walked	down	the	aisle.	n/a	n/a	bride/aisle	2.61288	2.135103	2.563921	0.428818	1	1	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound101	NPC_ears.wav	I	hear	with	my	ears.	n/a	n/a	n/a	ear	2.257188	1.75157	2.233606	0.482036	1	3	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound102	NPI_bird(thorn).wav	Tweet	goes	the	thorn.	n/a	n/a	n/a	n/a	bird	1.877937	1.349149	1.81897	0.469821	1	4	0.9140625	1	Expectation not disrupted/Congruent and incongruent type match
+sound103	NPC_toilet.wav	I	flush	the	toilet.	n/a	n/a	n/a	n/a	flush	1.930476	1.430945	1.895569	0.464624	1	1	0.931818182	1	Expectation not disrupted/Congruent and incongruent type match
+sound104	NPI_camping(bacon).wav	We	bring	a	tent	to	go	bacon.	n/a	camp	2.839093	2.361896	2.799224	0.437328	1	4	0.992248062	4	Verb then noun
+sound105	NPC_animals.wav	The	sign	said	do	not	feed	the	animals.	feed	3.654195	3.04161	3.610513	0.568903	1	1	0.492424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound106	(LD5_Eliminated)NPI_water(fur).wav	The	boat	floats	on	the	fur.	n/a	n/a	float/boat	2.410408	1.937999	2.37215	0.434151	1	4	0.682170543	5	Does not match on syllable
+sound107	NPC_books.wav	He	likes	to	read	books.	n/a	n/a	n/a	book/read	2.337256	1.84884	2.304269	0.455429	1	1	0.930232558	2	Expecting a plural
+sound108	NPC_broom.wav	I	sweep	the	floor	with	a	broom.	n/a	broom/floor	3.017574	2.518843	2.970319	0.451476	1	1	0.910447761	1	Expectation not disrupted/Congruent and incongruent type match
+sound109	NPI_drill(bowl).wav	At	school	there	was	a	fire	bowl.	n/a	drill	3.086485	2.70504	3.05432	0.34928	1	4	0.790697674	1	Expectation not disrupted/Congruent and incongruent type match
+sound110	NPI_dancers(pirate).wav	Ballerinas	are	great	pirate.	n/a	n/a	n/a	n/a	dance	2.206281	1.621993	2.171065	0.549072	1	4	0.945736434	2	Expecting a plural
+sound111	NPI_present(sister).wav	For	his	birthday	I	wrapped	a	sister.	n/a	present	3.078617	2.533738	3.035386	0.501648	2	4	0.559701493	1	Expectation not disrupted/Congruent and incongruent type match
+sound112	NPC_bridge.wav	Boats	sail	under	the	bridge.	n/a	n/a	n/a	bridge/boat	1.97322	1.564835	1.943339	0.378504	2	1	0.424242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound113	NPI_job(pants).wav	His	mom	quit	her	pants.	n/a	n/a	n/a	quit	2.109025	1.641456	2.089523	0.448067	2	4	0.940298507	1	Expectation not disrupted/Congruent and incongruent type match
+sound114	NPI_fixed(dog).wav	The	toy	broke	and	needed	to	be	dog.	fix	3.253379	2.882927	3.221517	0.33859	2	4	0.813953488	4	Verb then noun
+sound115	NPC_eats.wav	The	baby	wears	a	bib	when	he	eats.	bib/eat	3.645805	3.095305	3.609619	0.514314	2	1	0.96969697	4	Verb then noun
+sound116	NPI_farm(bird).wav	Cows	live	on	a	bird.	n/a	n/a	n/a	farm/cow	2.086259	1.657687	2.048257	0.39057	2	4	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound117	NPI_clothes(bite).wav	My	parents	fold	my	bite.	n/a	n/a	n/a	fold	2.096145	1.745894	2.062492	0.316598	2	4	0.5859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound118	NPI_bridge(steak).wav	Boats	sail	under	the	steak.	n/a	n/a	n/a	bridge/boat	2.085918	1.562113	2.058313	0.4962	2	2	0.424242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound119	NPI_skunk(broom).wav	His	dog	was	sprayed	by	a	broom.	n/a	spray	3.136576	2.715444	3.11703	0.401586	2	4	0.622047244	1	Expectation not disrupted/Congruent and incongruent type match
+sound120	NPI_dice(art).wav	In	games	I	roll	the	art.	n/a	n/a	dice	2.498163	2.128682	2.47117	0.342488	2	4	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound121	NPC_blocks.wav	The	baby	liked	to	stack	blocks.	n/a	n/a	block	2.579665	2.081934	2.550715	0.468781	2	1	0.880597015	2	Expecting a plural
+sound122	NPC_clues.wav	The	detectives	found	many	clues.	n/a	n/a	n/a	clue	2.383855	1.910986	2.314619	0.403633	2	1	0.8515625	2	Expecting a plural
+sound123	NPC_coat.wav	I	put	on	my	rain	coat.	n/a	n/a	coat	2.456077	2.051024	2.435045	0.384021	2	1	0.757575758	1	Expectation not disrupted/Congruent and incongruent type match
+sound124	NPI_snake(play).wav	Hiss	goes	the	play.	n/a	n/a	n/a	n/a	snake	1.878932	1.423198	1.944224	0.521026	2	2	0.874015748	1	Expectation not disrupted/Congruent and incongruent type match
+sound125	NPC_card.wav	I	signed	a	birthday	card.	n/a	n/a	n/a	card	2.10254	1.756884	2.073564	0.31668	2	3	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound126	NPI_gum(coat).wav	He	is	chewing	bubble	coat.	n/a	n/a	n/a	gum	2.226145	1.720249	2.160308	0.440059	2	4	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound127	NPI_tank(truth).wav	Mom	filled	up	her	gas	truth.	n/a	n/a	tank	2.756689	2.24462	2.74669	0.50207	2	4	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound128	NPI_cold(bib).wav	Winter	is	very	bib.	n/a	n/a	n/a	n/a	cold	1.680658	1.341426	1.640798	0.299372	2	4	0.868217054	3	Adjective then noun
+sound129	NPI_fruit(tent).wav	He	likes	to	eat	fresh	tent.	n/a	n/a	fruit/fresh	2.432993	2.011503	2.409453	0.39795	2	4	0.447761194	1	Expectation not disrupted/Congruent and incongruent type match
+sound130	(LD5_Eliminated)NPC_cut.wav	I	got	a	hair	cut.	n/a	n/a	n/a	cut	2.095034	1.691896	2.069583	0.377687	2	1	0.858208955	5	Haircut is a single words
+sound131	NPI_broom(bus).wav	I	sweep	the	floor	with	a	bus.	n/a	broom/floor	3.006327	2.519347	2.969146	0.449799	2	2	0.910447761	1	Expectation not disrupted/Congruent and incongruent type match
+sound132	NPI_lie(cup).wav	Not	telling	the	truth	is	telling	a	cup.	lie	3.407959	3.019082	3.32874	0.309658	2	4	0.976744186	1	Expectation not disrupted/Congruent and incongruent type match
+sound133	NPI_cow(axe).wav	Farmers	milk	the	axe.	n/a	n/a	n/a	n/a	cow	1.860431	1.418058	1.842869	0.424811	2	2	0.917910448	1	Expectation not disrupted/Congruent and incongruent type match
+sound134	NPI_truck(cap).wav	His	dad	drove	a	delivery	break.	n/a	n/a	drive/truck	2.922789	2.456612	2.869039	0.412427	2	4	0.787878788	1	Expectation not disrupted/Congruent and incongruent type match
+sound135	NPI_pipe(phone).wav	His	grandpa	smoked	from	a	phone.	n/a	n/a	pipe	2.839138	2.333563	2.802697	0.469134	2	4	0.88372093	1	Expectation not disrupted/Congruent and incongruent type match
+sound136	NPI_fly(edge).wav	She	swatted	the	edge.	n/a	n/a	n/a	n/a	fly	1.900454	1.411288	1.8743	0.463012	2	4	0.88976378	1	Expectation not disrupted/Congruent and incongruent type match
+sound137	NPI_walk(class).wav	Babies	crawl	before	they	class.	n/a	n/a	n/a	crawl	2.487937	1.951148	2.451933	0.500785	2	2	1	4	Verb then noun
+sound138	NPC_clown.wav	I	laughed	at	the	circus	clown.	n/a	n/a	clown	2.655238	2.176487	2.617621	0.441134	2	1	0.901515152	1	Expectation not disrupted/Congruent and incongruent type match
+sound139	NPI_crown(bench).wav	A	king	wears	a	bench.	n/a	n/a	n/a	crown	1.995442	1.56234	1.98395	0.42161	2	2	0.96875	1	Expectation not disrupted/Congruent and incongruent type match
+sound140	NPI_clock(tree).wav	Tick	tock	goes	the	tree.	n/a	n/a	n/a	clock	2.199365	1.759159	2.150144	0.390985	2	4	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound141	NPI_nests(drill).wav	Birds	like	to	build	drill.	n/a	n/a	n/a	build	1.990703	1.579498	1.96132	0.381822	2	4	1	2	Expecting a plural
+sound142	NPC_eyes.wav	I	see	with	my	eyes.	n/a	n/a	n/a	eye	2.188277	1.694211	2.142455	0.448244	2	3	0.954545455	1	Expectation not disrupted/Congruent and incongruent type match
+sound143	NPC_broke.wav	He	wore	a	cast	because	his	arm	broke.	broke/cast/arm	3.791111	3.344086	3.75511	0.411024	2	1	0.878787879	4	Verb then noun
+sound144	NPC_bruise.wav	I	hit	my	arm	and	got	a	bruise.	bruise	3.57932	3.069156	3.555093	0.485937	2	1	0.939849624	2	Rain is plural (counting issue)
+sound145	NPC_dream.wav	She	woke	up	after	a	bad	dream.	n/a	dream	3.007166	2.5263	2.961478	0.435178	2	1	0.798449612	1	Expectation not disrupted/Congruent and incongruent type match
+sound146	(LD5_Eliminated)NPC_fried.wav	He	likes	his	chicken	deep	fried.	n/a	n/a	fried	2.660113	2.14707	2.630414	0.483344	2	1	1	5	Hyphenated
+sound147	NPI_cart(score).wav	At	the	store	I	pushed	the	score.	n/a	cart	3.166984	2.676784	3.135965	0.459181	2	2	0.828358209	1	Expectation not disrupted/Congruent and incongruent type match
+sound148	NPI_fin(desk).wav	Sharks	have	a	tail	desk.	n/a	n/a	n/a	fin	2.330091	1.8821	2.290851	0.408751	2	4	0.904761905	1	Expectation not disrupted/Congruent and incongruent type match
+sound149	NPI_night(inch).wav	It	is	dark	at	inch.	n/a	n/a	n/a	dark	2.174966	1.629723	2.113977	0.484254	2	4	0.976377953	4	Grammatically incorrect
+sound150	(LD5_Eliminated)NPC_warm.wav	The	water	was	luke	warm.	n/a	n/a	n/a	warmth	2.159478	1.639724	2.092226	0.452502	2	1	0.984615385	5	Kids may not know what "luke warm" is
+sound151	(LD5_Eliminated)NPI_roar(mold).wav	The	lion	says	mold.	n/a	n/a	n/a	n/a	roar/say	1.899887	1.401008	1.859957	0.458949	2	2	0.938931298	5	Could make sense if lion is animated
+sound152	NPC_fur.wav	Cats	have	soft	fur.	n/a	n/a	n/a	n/a	fur	1.989456	1.479055	1.958122	0.479067	2	1	0.924242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound153	(LD5_Eliminated)NPI_holes(spring).wav	My	dog	digs	spring.	n/a	n/a	n/a	n/a	dig	2.036916	1.463131	2.011464	0.548333	2	2	0.789473684	5	Dig spring could make sense as in "likes spring"
+sound154	NPC_flat.wav	The	earth	is	round	not	flat.	n/a	n/a	flat	2.689274	2.119457	2.651414	0.531957	2	1	0.962686567	3	Adjective then noun
+sound155	NPC_clean.wav	I	keep	my	room	clean.	n/a	n/a	n/a	clean	2.128549	1.581446	2.100079	0.518633	2	1	0.676691729	3	Adjective then noun
+sound156	NPC_clothes.wav	My	parents	fold	my	clothes.	n/a	n/a	n/a	fold	2.230794	1.735527	2.185308	0.449781	2	3	0.5859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound157	(LD5_Eliminated)NPC_chain.wav	Prisoners	walk	with	a	ball	and	chain.	n/a	chain	3.124263	2.628469	3.085157	0.456688	2	1	0.968992248	5	Cultural and hyphened noun
+sound158	NPC_pictures.wav	I	like	to	draw	pictures.	n/a	n/a	n/a	draw	2.399365	1.768316	2.365698	0.597382	2	1	0.604651163	2	Expecting a plural
+sound159	NPI_boat(cop).wav	We	went	fishing	on	a	cop.	n/a	n/a	boat	2.548435	2.152635	2.508373	0.355738	2	2	0.604651163	1	Expectation not disrupted/Congruent and incongruent type match
+sound160	NPI_glue(cliff).wav	The	paper	sticks	together	like	cliff.	n/a	n/a	glue	2.585442	2.112086	2.553252	0.441166	2	4	0.937984496	2	Expecting a plural
+sound161	NPC_string.wav	His	guitar	had	a	broken	string.	n/a	n/a	string	2.942426	2.455031	2.912668	0.457637	2	1	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound162	NPC_dog.wav	Bark	says	the	dog.	n/a	n/a	n/a	n/a	dog/bark/say	1.790385	1.319421	1.768416	0.448995	2	1	0.977272727	1	Expectation not disrupted/Congruent and incongruent type match
+sound163	NPI_round(kiss).wav	The	ball	is	not	square	but	kiss.	n/a	round	3.066531	2.575481	3.0375	0.462019	2	4	0.945736434	3	Adjective then noun
+sound164	NPI_bear(pie).wav	The	woods	had	a	big	brown	scary	pie.	bear	3.583832	3.129825	3.539522	0.409697	2	4	0.618320611	1	Expectation not disrupted/Congruent and incongruent type match
+sound165	NPC_guess.wav	On	an	answer	he	made	a	lucky	guess.	guess	3.191542	2.766162	3.172328	0.406166	2	1	0.970149254	1	Expectation not disrupted/Congruent and incongruent type match
+sound166	NPI_hair(nest).wav	Bald	people	do	not	have	nest.	n/a	n/a	bald	2.535918	2.081938	2.504763	0.422825	2	4	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound167	NPI_sun(lunch).wav	The	clouds	hid	the	lunch.	n/a	n/a	n/a	sun	2.119048	1.610286	2.081587	0.471301	2	4	0.813432836	1	Expectation not disrupted/Congruent and incongruent type match
+sound168	NPC_chalk.wav	On	the	sidewalk	I	draw	with 	chalk.	n/a	chalk	2.92941	2.505438	2.889487	0.384049	2	1	0.962686567	1	Expectation not disrupted/Congruent and incongruent type match
+sound169	NPI_broke(pond).wav	He	wore	a	cast	because	his	arm	pond.	broke/cast/arm	3.84195	3.343114	3.812379	0.469265	2	2	0.878787879	4	Verb then noun
+sound170	NPI_three(boy).wav	I	count	one	two	boy.	n/a	n/a	n/a	count	2.13415	1.717623	2.0627	0.345077	2	4	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound171	(LD5_Eliminated)NPI_cute(fence).wav	She	thinks	all	baby	animals	are	fence.	n/a	cute	2.815578	2.277258	2.773225	0.495967	2	4	0.953488372	5	Deleted for counting issue (expecting adjetive, and if noun needs to be plural) Hard to classify.
+sound172	(LD5_Eliminated)NPC_beard.wav	Santa	has	a	big	white	beard.	n/a	n/a	beard	2.613107	2.184887	2.563358	0.378471	2	1	0.976744186	5	Cultural
+sound173	NPC_lawn.wav	My	dad	mows	the	lawn.	n/a	n/a	n/a	grass(lawn)	2.305125	1.833068	2.273716	0.440648	2	1	0.887218045	1	Expectation not disrupted/Congruent and incongruent type match
+sound174	(LD5_Eliminated)NPI_weight(sky).wav	The	girl	gained	sky.	n/a	n/a	n/a	n/a	gain	1.968844	1.449029	1.948653	0.499624	2	4	0.736434109	5	Gained sky could make sense if you were in a plane
+sound175	NPI_goat(bread).wav	Bah	says	the	sheep	and	bread.	n/a	n/a	goat/say	2.470612	2.061718	2.446978	0.38526	2	4	0.461538462	1	Expectation not disrupted/Congruent and incongruent type match
+sound176	NPI_kitchen(baby).wav	She	cooks	in	the	baby.	n/a	n/a	n/a	cook	2.330975	1.802373	2.293379	0.491006	2	4	0.744186047	1	Expectation not disrupted/Congruent and incongruent type match
+sound177	NPC_pink.wav	Pigs	are	colored	pink.	n/a	n/a	n/a	n/a	pink	1.806825	1.383681	1.762072	0.378391	2	1	0.9375	3	Adjective then noun
+sound178	(LD5_Eliminated)NPI_live(truck).wav	The	woods	are	where	bears	truck.	n/a	n/a	live	2.791474	2.311551	2.750548	0.438997	2	2	0.84496124	5	Truck becomes a verb so could make sense
+sound179	NPC_cages.wav	Animals	are	locked	in	cages.	n/a	n/a	n/a	cage	2.562449	1.955074	2.499229	0.544155	2	1	0.820895522	2	Expecting a plural
+sound180	NPC_clock.wav	Tick	tock	goes	the	clock.	n/a	n/a	n/a	clock	2.115034	1.742266	2.083717	0.341451	2	1	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound181	NPI_bottle(money).wav	The	baby	drinks	from	his	money.	n/a	n/a	bottle	2.689274	2.256938	2.65216	0.395222	2	4	0.875	1	Expectation not disrupted/Congruent and incongruent type match
+sound182	NPI_claws(floor).wav	The	cat	has	sharp	floor.	n/a	n/a	n/a	claw	2.076825	1.635567	2.035362	0.399795	2	4	0.848484848	2	Expecting a plural
+sound183	NPC_fake.wav	The	diamond	was	not	real	it	was	fake.	fake	3.602834	3.037332	3.534421	0.497089	2	1	0.893939394	3	Adjective then noun
+sound184	NPI_shot(crown).wav	The	doctor	gave	him	a	flu	crown.	n/a	shot	3.125261	2.595657	3.07533	0.479673	2	4	0.888059701	1	Expectation not disrupted/Congruent and incongruent type match
+sound185	NPC_present.wav	For	his	birthday	I	wrapped	a	present.	n/a	present	3.07542	2.531907	3.03294	0.501033	2	3	0.559701493	1	Expectation not disrupted/Congruent and incongruent type match
+sound186	NPC_job.wav	His	mom	quit	her	job.	n/a	n/a	n/a	quit	2.098753	1.646716	2.049731	0.403015	2	3	0.940298507	1	Expectation not disrupted/Congruent and incongruent type match
+sound187	NPI_bag(bell).wav	He	puts	his	lunch	in	a	paper	bell.	bag	3.714082	3.22402	3.64987	0.42585	2	4	0.930232558	1	Expectation not disrupted/Congruent and incongruent type match
+sound188	NPC_dare.wav	Lets	play	truth	or	dare.	n/a	n/a	n/a	dare	2.1022	1.673757	2.060449	0.386692	2	3	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound189	NPC_green.wav	The	grass	is	colored	green.	n/a	n/a	n/a	green/grass	2.319705	1.789667	2.294967	0.5053	2	1	0.992424242	3	Adjective then noun
+sound190	NPI_castle(doctor).wav	A	princess	lives	in	a	doctor.	n/a	n/a	castle	2.667778	2.177045	2.644207	0.467162	2	2	0.891472868	1	Expectation not disrupted/Congruent and incongruent type match
+sound191	NPI_brown(job).wav	A	tree	trunk	is	colored	job.	n/a	n/a	brown	2.542744	2.119878	2.514727	0.394849	2	4	0.925373134	3	Adjective then noun
+sound192	NPC_gel.wav	He	styled	his	hair	with	gel.	n/a	n/a	gel	2.496735	2.053806	2.471771	0.417965	2	3	0.69924812	1	Expectation not disrupted/Congruent and incongruent type match
+sound193	NPC_glue.wav	The	paper	sticks	together	like	glue.	n/a	n/a	glue	2.550726	2.114958	2.520605	0.405647	2	3	0.937984496	2	Expecting a plural
+sound194	NPI_green(lock).wav	The	grass	is	colored	lock.	n/a	n/a	n/a	green/grass	2.219433	1.796476	2.148441	0.351965	2	2	0.992424242	3	Adjective then noun
+sound195	(LD5_Eliminated)NPC_cleats.wav	For	soccer	you	wear	cleats.	n/a	n/a	n/a	cleat	2.265283	1.83463	2.240968	0.406338	2	1	0.618320611	5	Repeat incongruent target and cleats vs. spikes = cultural
+sound196	NPC_three.wav	I	count	one	two	three.	n/a	n/a	n/a	count	2.12458	1.707217	2.097486	0.390269	2	3	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound197	NPC_fin.wav	Sharks	have	a	tail	fin.	n/a	n/a	n/a	fin	2.343356	1.876242	2.314137	0.437895	2	3	0.904761905	1	Expectation not disrupted/Congruent and incongruent type match
+sound198	NPC_chores.wav	My	mom	makes	me	do	household	chores.	n/a	chore	3.172177	2.597194	3.123879	0.526685	2	3	0.962121212	2	Expecting a plural
+sound199	NPC_nice.wav	The	opposite	of	mean	is	nice.	n/a	n/a	nice	2.610635	2.160272	2.570712	0.41044	2	3	0.720930233	3	Adjective then noun
+sound200	NPC_test.wav	I	cheated	on	the	test.	n/a	n/a	n/a	cheat	2.183401	1.652054	2.132985	0.480931	2	3	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound201	NPI_clay(gas).wav	In	art	class	we	mold	gas.	n/a	n/a	clay	2.708118	2.268194	2.682174	0.41398	2	2	0.859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound202	NPI_tear(corn).wav	Down	the	sad	woman's	cheek	came	a	corn.	tear/cheek	3.786463	3.284789	3.757964	0.473175	2	4	0.984962406	1	Expectation not disrupted/Congruent and incongruent type match
+sound203	NPI_crust(foot).wav	His	mom	makes	her	own	pie	foot.	n/a	crust	3.006463	2.576998	2.977651	0.400653	2	4	0.708661417	1	Expectation not disrupted/Congruent and incongruent type match
+sound204	NPC_fall.wav	After	summer	is	fall.	n/a	n/a	n/a	n/a	fall	2.003968	1.535584	1.982689	0.447105	2	1	0.798449612	1	Expectation not disrupted/Congruent and incongruent type match
+sound205	NPC_pants.wav	He	pulled	up	his	pants.	n/a	n/a	n/a	pants	2.288662	1.751144	2.222766	0.471622	2	3	0.666666667	1	Expectation not disrupted/Congruent and incongruent type match
+sound206	NPI_card(fly).wav	I	signed	a	birthday	fly.	n/a	n/a	n/a	card	2.207438	1.752986	2.171843	0.418857	2	2	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound207	NPI_cry(fork).wav	When	I	am	sad	I	fork.	n/a	n/a	cry	2.507052	2.042927	2.477975	0.435048	2	4	0.906976744	4	Verb then noun
+sound208	NPI_clouds(dirt).wav	In	the	sky	are	white	fluffy	dirt.	n/a	cloud	3.008617	2.614923	2.952369	0.337446	2	2	0.97761194	1	Expectation not disrupted/Congruent and incongruent type match
+sound209	NPC_camping.wav	We	bring	a	tent	to	go	camping.	n/a	camp	2.88941	2.373447	2.83631	0.462863	2	1	0.992248062	4	Verb then noun
+sound210	NPC_foot.wav	I	put	the	sock	on	my	foot.	n/a	foot	3.092132	2.587952	3.072475	0.484523	2	3	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound211	NPI_trees(book).wav	A	monkey	climbs	book.	n/a	n/a	n/a	n/a	climb	1.706032	1.385153	1.664328	0.279175	2	2	0.821705426	2	Expecting a plural
+sound212	NPC_wet.wav	The	water	got	her	hair	wet.	n/a	n/a	wet	2.333197	1.931296	2.304895	0.373599	2	1	0.930769231	3	Adjective then noun
+sound213	NPC_bottle.wav	The	baby	drinks	from	his	bottle.	n/a	n/a	bottle	2.704538	2.257663	2.647774	0.390111	2	3	0.875	1	Expectation not disrupted/Congruent and incongruent type match
+sound214	NPC_fear.wav	The	brave	man	had	no	fear.	n/a	n/a	fear/brave	2.622971	2.188227	2.596526	0.408299	2	3	0.8203125	1	Expectation not disrupted/Congruent and incongruent type match
+sound215	NPC_kitchen.wav	She	cooks	in	the	kitchen.	n/a	n/a	n/a	cook	2.348957	1.788667	2.310384	0.521717	2	3	0.744186047	1	Expectation not disrupted/Congruent and incongruent type match
+sound216	NPI_couch(bulb).wav	I	watch	tv	and	sit	on	the	bulb.	couch	3.62932	3.226122	3.609829	0.383707	2	4	0.860465116	1	Expectation not disrupted/Congruent and incongruent type match
+sound217	NPI_bushes(oven).wav	Outside	a	man	trimmed	the	oven.	n/a	n/a	bush	2.721451	2.243945	2.691583	0.447638	2	4	0.265151515	1	Expectation not disrupted/Congruent and incongruent type match
+sound218	NPC_desk.wav	In	school	I	sit	at	a	desk.	n/a	desk	2.857483	2.400635	2.780787	0.380152	2	3	0.858208955	4	Grammatically incorrect
+sound219	NPI_books(tear).wav	He	likes	to	read	tear.	n/a	n/a	n/a	book/read	2.28644	1.831297	2.252586	0.421289	2	2	0.930232558	2	Expecting a plural
+sound220	NPC_bear.wav	The	woods	had	a	big	brown	scary	bear.	bear	3.59263	3.146276	3.548921	0.402645	2	3	0.618320611	1	Expectation not disrupted/Congruent and incongruent type match
+sound221	NPI_bite(north).wav	He	had	an	itchy	bug	north.	n/a	n/a	bite	2.593084	2.116847	2.553393	0.436546	3	2	0.937984496	3	Noun then adverb/adjective
+sound222	NPI_toilet(window).wav	I	flush	the	window.	n/a	n/a	n/a	n/a	flush	1.971247	1.430642	1.937789	0.507147	3	2	0.931818182	1	Expectation not disrupted/Congruent and incongruent type match
+sound223	NPI_goose(pipe).wav	We	played	duck	duck	pipe.	n/a	n/a	n/a	goose	2.388481	1.818653	2.35381	0.535157	3	4	0.859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound224	NPC_grade.wav	In	school	he	is	in	first	grade.	n/a	grade	3.03898	2.644096	3.022738	0.378642	3	1	0.791044776	1	Expectation not disrupted/Congruent and incongruent type match
+sound225	NPI_catch(road).wav	I	throw	and	you	road.	n/a	n/a	n/a	catch/throw	1.994195	1.576687	1.955339	0.378652	3	4	0.985074627	4	Verb then noun
+sound226	NPI_bright(gills).wav	I	wear	sunglasses	because	the	sun	is	gills.	bright	3.83356	3.358245	3.796653	0.438408	3	2	0.8515625	2	Gills is plural
+sound227	NPI_arm(stack).wav	I	have	two	legs	and	two	stack.	n/a	arm/two	3.02585	2.53588	2.995569	0.459689	3	4	0.837209302	2	Expecting a plural
+sound228	NPI_aisle(chicken).wav	The	bride	walked	down	the	chicken.	n/a	n/a	bride/aisle	2.705261	2.136612	2.659874	0.523262	3	2	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound229	NPI_bulb(farm).wav	Tom	replaced	the	light	farm.	n/a	n/a	n/a	bulb	2.320023	1.786247	2.287471	0.501224	3	2	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound230	NPC_bird.wav	Tweet	goes	the	bird.	n/a	n/a	n/a	n/a	bird	1.914875	1.341728	1.866815	0.525087	3	3	0.9140625	1	Expectation not disrupted/Congruent and incongruent type match
+sound231	NPC_gray.wav	The	rainy	sky	was	colored	gray.	n/a	n/a	gray	2.721905	2.269847	2.690908	0.421061	3	1	0.887218045	1	Expectation not disrupted/Congruent and incongruent type match
+sound232	NPI_fat(glass).wav	Goats	are	skinny	and	pigs	are	glass.	n/a	fat	3.232404	2.683682	3.204166	0.520484	3	4	0.872180451	3	Adjective then noun
+sound233	NPC_crown.wav	A	king	wears	a	crown.	n/a	n/a	n/a	crown	2.08619	1.568955	2.059024	0.490069	3	3	0.96875	1	Expectation not disrupted/Congruent and incongruent type match
+sound234	NPC_fat.wav	Goats	are	skinny	and	pigs	are	fat.	n/a	fat	3.135351	2.673418	3.104611	0.431193	3	3	0.872180451	3	Adjective then noun
+sound235	NPC_axe.wav	My	dad	chops	wood	with	an	axe.	n/a	axe/dad	3.108073	2.599401	3.07834	0.478939	3	1	0.96124031	4	Grammatically incorrect
+sound236	NPC_barn.wav	The	farmer's	animals	live	in	the	barn.	n/a	barn	3.138571	2.674485	3.097381	0.422896	3	3	0.8203125	1	Expectation not disrupted/Congruent and incongruent type match
+sound237	NPC_beat.wav	The	drummer	keeps	the	beat.	n/a	n/a	n/a	drum	2.12034	1.737573	2.076214	0.338641	3	3	0.7421875	1	Expectation not disrupted/Congruent and incongruent type match
+sound238	NPC_night.wav	It	is	dark	at	night.	n/a	n/a	n/a	dark	2.110295	1.618351	2.059002	0.440651	3	3	0.976377953	4	Grammatically incorrect
+sound239	NPI_fur(dad).wav	Cats	have	soft	dad.	n/a	n/a	n/a	n/a	fur	1.945465	1.504789	1.94058	0.435791	3	2	0.924242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound240	NPI_gray(bald).wav	The	rainy	sky	was	colored	bald.	n/a	n/a	gray	2.750204	2.275932	2.72608	0.450148	3	2	0.887218045	1	Expectation not disrupted/Congruent and incongruent type match
+sound241	(LD5_Eliminated)NPC_coal.wav	Santa	gives	bad	kids	coal.	n/a	n/a	n/a	coal	2.31458	1.830649	2.284602	0.453953	3	1	0.92481203	5	Cultural
+sound242	NPC_farm.wav	Cows	live	on	a	farm.	n/a	n/a	n/a	farm/cow	2.09941	1.619584	2.069894	0.45031	3	3	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound243	NPI_bones(wind).wav	The	Museum	showed	dinosaur	wind.	n/a	n/a	n/a	bone	2.454671	1.95801	2.395636	0.437626	3	4	0.609375	1	Expectation not disrupted/Congruent and incongruent type match
+sound244	NPC_cane.wav	The	old	man	walked	with	a	cane.	n/a	cane	3.008685	2.526766	2.965786	0.43902	3	1	0.651162791	1	Expectation not disrupted/Congruent and incongruent type match
+sound245	NPC_shot.wav	The	doctor	gave	him	a	flu	shot.	n/a	shot	3.062245	2.590284	3.011694	0.42141	3	3	0.888059701	1	Expectation not disrupted/Congruent and incongruent type match
+sound246	NPC_chick.wav	A	baby	chicken	is	a	chick.	n/a	n/a	chick	2.524172	2.108028	2.49404	0.386012	3	1	0.916666667	1	Expectation not disrupted/Congruent and incongruent type match
+sound247	(LD5_Eliminated)NPC_cute.wav	She	thinks	all	baby	animals	are	cute.	n/a	cute	2.730794	2.278292	2.705175	0.426883	3	3	0.953488372	5	Deleted for counting issue (expecting adjetive, and if noun needs to be plural) Hard to classify.
+sound248	NPC_button.wav	On	the	remote	he	clicked	the	button.	n/a	click	3.103129	2.586484	3.065003	0.478519	3	1	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound249	NPI_friend(pound).wav	I	play	with	my	best	pound.	n/a	n/a	friend	2.484626	1.950728	2.447216	0.496488	3	2	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound250	NPC_sun.wav	The	clouds	hid	the	sun.	n/a	n/a	n/a	sun	2.127188	1.616345	2.098748	0.482403	3	3	0.813432836	1	Expectation not disrupted/Congruent and incongruent type match
+sound251	NPI_bread(sea).wav	She	baked	a	loaf	of	sea.	n/a	n/a	bread	2.644127	2.188635	2.609117	0.420482	3	4	0.992248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound252	NPC_pipe.wav	His	grandpa	smoked	from	a	pipe.	n/a	n/a	pipe	2.795828	2.34562	2.74669	0.40107	3	3	0.88372093	1	Expectation not disrupted/Congruent and incongruent type match
+sound253	NPC_fork.wav	He	eats	steak	with	a	knife	and	fork.	fork/food	3.470771	2.969859	3.395924	0.426065	3	1	0.992537313	1	Expectation not disrupted/Congruent and incongruent type match
+sound254	NPC_caves.wav	Bats	live	in	caves.	n/a	n/a	n/a	n/a	cave	1.799796	1.221666	1.773574	0.551908	3	3	0.937984496	2	Expecting a plural
+sound255	NPI_cliff(sheep).wav	He	stood	at	the	edge	of	a	sheep.	cliff	3.534467	3.009006	3.492514	0.483508	3	2	0.742424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound256	(LD5_Eliminated)NPI_beard(catch).wav	Santa	has	a	big	white	catch.	n/a	n/a	beard	2.665556	2.179386	2.633229	0.453843	3	2	0.976744186	5	Cultural
+sound257	NPI_cone(hug).wav	He	eats	his	ice	cream	on	a	hug.	cone	3.748526	3.267551	3.716209	0.448658	3	2	0.71875	1	Expectation not disrupted/Congruent and incongruent type match
+sound258	NPC_steal.wav	A	thief	likes	to	steal.	n/a	n/a	n/a	thief	2.157755	1.679109	2.131186	0.452077	3	1	0.953488372	4	Verb then noun
+sound259	NPC_thorns.wav	The	rose	had	sharp	thorns.	n/a	n/a	n/a	thorn	2.351519	1.73246	2.280288	0.547828	3	1	0.976744186	2	Expecting a plural
+sound260	NPC_dice.wav	In	games	I	roll	the	dice.	n/a	n/a	dice	2.608889	2.12013	2.579383	0.459253	3	3	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound261	NPI_gold(fridge).wav	Wedding	rings	are	made	of	fridge.	n/a	n/a	gold	2.516213	2.120529	2.507703	0.387174	3	2	0.770992366	1	Expectation not disrupted/Congruent and incongruent type match
+sound262	NPC_bat.wav	The	boy	hit	the	ball	with 	a	bat.	bat/ball/hit	3.599637	3.17503	3.568011	0.392981	3	3	0.902985075	1	Expectation not disrupted/Congruent and incongruent type match
+sound263	(LD5_Eliminated)NPC_eggs.wav	For	breakfast	she	has	bacon	and	eggs.	n/a	egg	3.080703	2.693219	3.050802	0.357583	3	1	0.984496124	5	Cultural
+sound264	NPI_store(stick).wav	We	buy	toys	at	the	toy	stick.	n/a	buy/toy	3.154195	2.687012	3.123921	0.436909	3	2	0.906976744	1	Expectation not disrupted/Congruent and incongruent type match
+sound265	(LD5_Eliminated)NPC_weight.wav	The	girl	gained	weight.	n/a	n/a	n/a	n/a	gain	1.945828	1.450438	1.915837	0.465399	3	3	0.736434109	5	Gained sky could make sense if you were in a plane
+sound266	NPC_brakes.wav	The	car	stopped	with	its	brakes.	n/a	n/a	brake	2.549093	2.062143	2.507303	0.44516	3	1	0.962121212	1	Expectation not disrupted/Congruent and incongruent type match
+sound267	NPI_chores(cave).wav	My	mom	makes	me	do	household	cave.	n/a	chore	3.03873	2.585211	3.006323	0.421112	3	4	0.962121212	2	Expecting a plural
+sound268	NPC_fast.wav	Cheetahs 	are	really	fast.	n/a	n/a	n/a	n/a	fast	1.921655	1.457226	1.892288	0.435062	3	1	0.850393701	3	Adjective/adverb then noun
+sound269	NPI_dolls(worm).wav	My	sister	plays	with	Barbie	worm.	n/a	n/a	doll	2.598163	2.165491	2.558305	0.392814	3	4	0.984375	2	Expecting a plural
+sound270	NPI_clean(cheek).wav	I	keep	my	room	cheek.	n/a	n/a	n/a	clean	2.031882	1.595112	1.99894	0.403828	3	2	0.676691729	3	Adjective then noun
+sound271	NPC_lie.wav	Not	telling	the	truth	is	telling	a	lie.	lie	3.455692	3.014183	3.412317	0.398134	3	3	0.976744186	1	Expectation not disrupted/Congruent and incongruent type match
+sound272	NPI_bruise(rain).wav	I	hit	my	arm	and	got	a	rain.	bruise/blue	3.636463	3.076373	3.611791	0.535418	3	2	0.939849624	2	Rain is plural (counting issue)
+sound273	NPC_hair.wav	Bald	people	do	not	have	hair.	n/a	n/a	bald	2.48034	2.086929	2.454215	0.367286	3	3	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound274	NPI_clown(dice).wav	I	laughed	at	the	circus	dice.	n/a	n/a	clown	2.6761	2.176826	2.638039	0.461213	3	2	0.901515152	1	Expectation not disrupted/Congruent and incongruent type match
+sound275	NPI_cape(pole).wav	Superman	wears	a	red	pole.	n/a	n/a	n/a	cape	2.622449	2.025592	2.574123	0.548531	3	2	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound276	NPC_bed.wav	At	night	I	sleep	in	my	bed.	n/a	bed	2.988299	2.633933	2.939226	0.305293	3	3	0.901515152	1	Expectation not disrupted/Congruent and incongruent type match
+sound277	NPC_dancers.wav	Ballerinas	are	great	dancers.	n/a	n/a	n/a	n/a	dance	2.208753	1.638196	2.1712	0.533004	3	3	0.945736434	2	Expecting a plural
+sound278	NPC_duck.wav	Quack	goes	the	duck.	n/a	n/a	n/a	n/a	duck	1.733288	1.302772	1.689958	0.387186	3	1	0.992248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound279	NPI_cough(friend).wav	My	cold	made	me	sneeze	and	friend.	n/a	cough	3.10034	2.642041	3.096581	0.458311	3	2	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound280	(LD5_Eliminated)NPI_eggs(brake).wav	For	breakfast	she	has	bacon	and	brake.	n/a	egg	3.143469	2.703804	3.105537	0.401733	3	2	0.984496124	5	Cultural
+sound281	NPC_spider.wav	There	are	eight	legs	on	a	spider.	n/a	eight	2.992358	2.450619	2.966048	0.515429	3	3	0.8984375	1	Expectation not disrupted/Congruent and incongruent type match
+sound282	NPI_thorns(house).wav	The	rose	had	sharp	house.	n/a	n/a	n/a	thorn	2.256757	1.742098	2.227405	0.485307	3	2	0.976744186	2	Expecting a plural
+sound283	(LD5_Eliminated)NPI_fried(mom).wav	He	likes	his	chicken	deep	mom.	n/a	n/a	fried	2.692812	2.146323	2.655301	0.508978	3	2	1	5	Hyphenated
+sound284	NPC_cob.wav	She	eats	corn	on	the	cob.	n/a	n/a	corn	2.474603	2.056551	2.435962	0.379411	3	1	0.9375	1	Expectation not disrupted/Congruent and incongruent type match
+sound285	NPC_dip.wav	I	love	chips	and	dip.	n/a	n/a	n/a	chip	1.976077	1.665896	1.938529	0.272633	3	1	0.4921875	1	Expectation not disrupted/Congruent and incongruent type match
+sound286	NPI_glass(shoe).wav	Windows	are	made	of	shoe.	n/a	n/a	n/a	glass	2.221293	1.783729	2.180844	0.397115	3	4	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound287	NPC_fruit.wav	He	likes	to	eat	fresh	fruit.	n/a	n/a	fruit/fresh	2.494807	2.013725	2.480248	0.466523	3	3	0.447761194	1	Expectation not disrupted/Congruent and incongruent type match
+sound288	NPI_down(tie).wav	She	told	me	to	calm	tie.	n/a	n/a	calm	2.679252	2.167385	2.633173	0.465788	3	4	0.968992248	3	Adjective/adverb then noun
+sound289	NPC_gloves.wav	On	his	hands	are	a	pair	of	gloves.	glove	3.487188	2.95271	3.440716	0.488006	3	3	0.854961832	2	Expecting a plural
+sound290	NPC_goat.wav	Bah	says	the	sheep	and	goat.	n/a	n/a	goat/say	2.437846	2.059377	2.409872	0.350495	3	3	0.461538462	1	Expectation not disrupted/Congruent and incongruent type match
+sound291	NPC_ghosts.wav	The	house	was	haunted	by	ghosts.	n/a	n/a	ghost	2.558277	2.102658	2.520648	0.41799	3	3	0.930232558	2	Expecting a plural
+sound292	NPC_drill.wav	At	school	there	was	a	fire	drill.	n/a	drill	3.084422	2.679991	3.043099	0.363108	3	3	0.790697674	1	Expectation not disrupted/Congruent and incongruent type match
+sound293	NPI_dog(chalk).wav	Bark	says	the	chalk.	n/a	n/a	n/a	n/a	dog/bark/say	1.786621	1.311241	1.746654	0.435413	3	2	0.977272727	1	Expectation not disrupted/Congruent and incongruent type match
+sound294	NPI_string(chick).wav	His	guitar	had	a	broken	chick.	n/a	n/a	string	2.912381	2.454674	2.902663	0.447989	3	2	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound295	NPC_fridge.wav	The	Jell-O	had	to	chill	in	the	fridge.	chill	3.390998	2.781652	3.361166	0.579514	3	1	0.9765625	1	Expectation not disrupted/Congruent and incongruent type match
+sound296	NPI_bow(eye).wav	On	the	present	I	tied	a	eye.	n/a	bow	3.04483	2.630889	2.992378	0.361489	3	4	0.888059701	4	Grammatically incorrect
+sound297	NPC_legs.wav	Dogs	have	four	legs.	n/a	n/a	n/a	n/a	four	1.920431	1.39664	1.889266	0.492626	3	1	0.612403101	2	Expecting a plural
+sound298	NPI_button(hotdog).wav	On	the	remote	he	clicked	the	hotdog.	n/a	click	3.213515	2.576898	3.190156	0.613258	3	2	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound299	NPI_cake(clue).wav	He	baked	a	birthday	clue.	n/a	n/a	n/a	cake	2.084989	1.608347	2.045822	0.437475	3	2	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound300	NPI_blocks(night).wav	The	baby	liked	to	stack	night.	n/a	n/a	block	2.521837	2.027619	2.492789	0.46517	3	2	0.880597015	2	Expecting a plural
+sound301	NPC_hug.wav	Charlie	wanted	a	kiss	and	a	hug.	n/a	hug	3.063061	2.722105	3.023188	0.301083	3	1	0.9375	1	Expectation not disrupted/Congruent and incongruent type match
+sound302	NPI_chest(sock).wav	My	heart	was	pounding	in	my	sock.	n/a	chest	2.979728	2.531808	2.926355	0.394547	3	2	0.932835821	1	Expectation not disrupted/Congruent and incongruent type match
+sound303	NPC_cup.wav	I	drink	from	a	cup.	n/a	n/a	n/a	cup/drink	2.045601	1.682745	2.002337	0.319592	3	3	0.441860465	1	Expectation not disrupted/Congruent and incongruent type match
+sound304	NPI_cap(chore).wav	He	screwed	off	the	bottle	chore.	n/a	n/a	cap	2.555306	2.108675	2.522781	0.414106	3	2	0.736434109	1	Expectation not disrupted/Congruent and incongruent type match
+sound305	NPI_fridge(pig).wav	The	Jell-O	had	to	chill	in	the	pig.	chill	3.210363	2.802913	3.180425	0.377512	3	2	0.9765625	1	Expectation not disrupted/Congruent and incongruent type match
+sound306	NPC_study.wav	He	failed	the	test	because	he	didn't	study.	fail	3.465578	3.010576	3.436853	0.426277	3	1	0.875968992	4	Verb then noun
+sound307	NPC_tank.wav	Mom	filled	up	her	gas	tank.	n/a	n/a	tank	2.73551	2.2726	2.731055	0.458455	3	3	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound308	NPC_fish.wav	On	the	boat	my	dad	caught	a	fish.	fish	3.339116	2.869784	3.302354	0.43257	3	1	0.945736434	1	Expectation not disrupted/Congruent and incongruent type match
+sound309	NPI_cop(cake).wav	He	was	pulled	over	by	a	cake.	n/a	cop	2.81873	2.419818	2.77885	0.359032	3	4	0.84496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound310	(LD5_Eliminated)NPC_school.wav	Jeff	is	too	cool	for	school.	n/a	n/a	cool	2.825646	2.290255	2.796133	0.505878	3	3	0.798449612	5	Cultural ideom
+sound311	NPC_cone.wav	He	eats	his	ice	cream	on	a	cone.	cone	3.763878	3.267762	3.73101	0.463248	3	3	0.71875	1	Expectation not disrupted/Congruent and incongruent type match
+sound312	NPC_bricks.wav	My	fireplace	is	made	of	red	bricks.	n/a	brick/red	3.309229	2.800637	3.269464	0.468827	3	3	0.878787879	2	Expecting a plural
+sound313	NPI_gills(doll).wav	Fish	breathe	through	doll.	n/a	n/a	n/a	n/a	gill	1.885714	1.397104	1.858891	0.461787	3	2	0.9375	2	Expecting a plural
+sound314	(LD5_Eliminated)NPI_found(goat).wav	My	hat	was	in	the	lost	and	goat.	lost	3.324966	2.904995	3.261012	0.356017	3	4	0.992424242	5	Hyphenated
+sound315	NPI_flat(cow).wav	The	earth	is	round	not	cow.	n/a	n/a	flat	2.710794	2.159335	2.649363	0.490028	3	2	0.962686567	3	Adjective then noun
+sound316	NPI_axe(grass).wav	My	dad	chops	wood	with	an	grass.	n/a	axe/dad	3.115465	2.590195	3.10791	0.517715	3	2	0.96124031	4	Grammatically incorrect
+sound317	NPI_duck(bank).wav	Quack	goes	the	bank.	n/a	n/a	n/a	n/a	duck	1.657007	1.298591	1.608975	0.310384	3	2	0.992248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound318	NPC_truck.wav	His	dad	drove	a	delivery	truck.	n/a	n/a	drive/truck	2.942789	2.457945	2.893367	0.435422	3	3	0.787878788	1	Expectation not disrupted/Congruent and incongruent type match
+sound319	NPI_phone(snake).wav	He	called	Helen	on	the	snake.	n/a	n/a	call/phone	2.610204	2.104378	2.579191	0.474813	3	2	0.937984496	1	Expectation not disrupted/Congruent and incongruent type match
+sound320	NPI_legs(barn).wav	Dogs	have	four	barn.	n/a	n/a	n/a	n/a	four	1.851474	1.407782	1.803229	0.395447	3	2	0.612403101	2	Expecting a plural
+sound321	NPC_party.wav	He	had	fun	at	the	birthday	party.	n/a	fun	2.942404	2.413756	2.887384	0.473628	3	3	0.977099237	1	Expectation not disrupted/Congruent and incongruent type match
+sound322	NPC_blue.wav	The	color	of	the	sky	is	blue.	n/a	blue	3.023061	2.542288	2.981923	0.439635	3	1	0.985074627	3	Adjective then noun
+sound323	NPI_hug(fear).wav	Charlie	wanted	a	kiss	and	a	fear.	n/a	hug	3.134694	2.714728	3.082706	0.367978	3	2	0.9375	1	Expectation not disrupted/Congruent and incongruent type match
+sound324	NPC_cliff.wav	He	stood	at	the	edge	of	a	cliff.	cliff	3.514875	3.007656	3.480835	0.473179	3	3	0.742424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound325	NPC_cry.wav	When	I	am	sad	I	cry.	n/a	n/a	cry	2.481678	2.04236	2.467784	0.425424	3	3	0.906976744	4	Verb then noun
+sound326	NPI_wet(whale).wav	The	water	got	her	hair	whale.	n/a	n/a	wet	2.381905	1.932158	2.358071	0.425913	3	2	0.930769231	3	Adjective then noun
+sound327	NPI_animals(trampoline).wav	The	sign	said	do	not	feed	the	trampoline.	feed	3.767415	3.046181	3.728769	0.682588	3	2	0.492424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound328	NPI_dress(fun).wav	The	bride	wears	a	white	fun.	n/a	n/a	dress/bride	2.823107	2.301806	2.803771	0.501965	3	4	0.753731343	3	Noun then adjective
+sound329	NPI_cages(woman).wav	Animals	are	locked	in	woman.	n/a	n/a	n/a	cage	2.400113	1.945278	2.349433	0.404155	3	2	0.820895522	2	Expecting a plural
+sound330	NPI_ants(fish).wav	The	picnic	was	ruined	by	crawling	fish.	n/a	ant	3.282404	2.753519	3.235862	0.482343	3	2	0.834586466	1	Expectation not disrupted/Congruent and incongruent type match
+sound331	NPI_bowl(test).wav	He	pours	cereal	into	a	test.	n/a	n/a	bowl	2.859478	2.405182	2.82004	0.414858	4	2	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound332	NPI_fish(cry).wav	On	the	boat	my	dad	caught	a	cry.	fish	3.471497	2.881454	3.437714	0.55626	4	2	0.945736434	1	Expectation not disrupted/Congruent and incongruent type match
+sound333	NPI_belt(bed).wav	Around	my	pants	I	wear	a	bed.	n/a	belt	3.086893	2.716474	3.02704	0.310566	4	4	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound334	NPC_bloom.wav	In	spring	the 	flowers	bloom.	n/a	n/a	n/a	bloom	2.491882	1.997749	2.444956	0.447207	4	1	0.932835821	4	Verb then noun
+sound335	NPI_caves(string).wav	Bats	live	in	string.	n/a	n/a	n/a	n/a	cave	1.749864	1.22611	1.7128	0.48669	4	2	0.937984496	2	Expecting a plural
+sound336	NPC_clay.wav	In	art	class	we	mold	clay.	n/a	n/a	clay	2.731134	2.254293	2.695679	0.441386	4	3	0.859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound337	NPI_bath(roar).wav	To	get	clean	I	take	a	roar.	n/a	bath	2.903129	2.464367	2.861322	0.396955	4	4	0.418604651	1	Expectation not disrupted/Congruent and incongruent type match
+sound338	NPC_belt.wav	Around	my	pants	I	wear	a	belt.	n/a	belt	3.086893	2.699055	3.029634	0.330579	4	3	0.992424242	1	Expectation not disrupted/Congruent and incongruent type match
+sound339	(LD5_Eliminated)NPC_found.wav	My	hat	was	in	the	lost	and	found.	lost	3.410998	2.895799	3.371184	0.475385	4	3	0.992424242	5	Hyphenated
+sound340	NPC_bow.wav	On	the	present	I	tied	a	bow.	n/a	bow	3.022381	2.617036	2.980751	0.363715	4	3	0.888059701	4	Grammatically incorrect
+sound341	NPI_dip(cage).wav	I	love	chips	and	cage.	n/a	n/a	n/a	chip	2.208571	1.667146	2.160107	0.492961	4	2	0.4921875	1	Expectation not disrupted/Congruent and incongruent type match
+sound342	NPI_fast(thief).wav	Cheetahs 	are	really	thief.	n/a	n/a	n/a	n/a	fast	1.870612	1.477945	1.840747	0.362802	4	2	0.850393701	3	Adjective/adverb then noun
+sound343	NPI_bloom(school).wav	In	spring	the 	flowers	school.	n/a	n/a	n/a	bloom	2.583084	1.991863	2.550392	0.558529	4	2	0.932835821	4	Verb then noun
+sound344	NPC_hands.wav	I	clap	my	hands.	n/a	n/a	n/a	n/a	clap	1.964875	1.455484	1.940743	0.485259	4	3	0.984496124	1	Expectation not disrupted/Congruent and incongruent type match
+sound345	NPC_cough.wav	My	cold	made	me	sneeze	and	cough.	n/a	cough	3.138798	2.657914	3.098356	0.440442	4	3	0.92248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound346	NPC_grill.wav	He	cooked	hotdogs	outside	on	the	grill.	n/a	grill	2.51746	2.113733	2.479348	0.365615	4	1	0.878787879	1	Expectation not disrupted/Congruent and incongruent type match
+sound347	NPC_round.wav	The	ball	is	not	square	but	round.	n/a	round	3.018027	2.552528	2.989388	0.43686	4	3	0.945736434	3	Adjective then noun
+sound348	NPI_fingers(kitchen).wav	On	one	hand	I	have	five	kitchen.	n/a	five	3.114694	2.610043	3.087473	0.47743	4	4	0.992248062	2	Expecting a plural
+sound349	NPC_goose.wav	We	played	duck	duck	goose.	n/a	n/a	n/a	goose	2.362449	1.81685	2.32409	0.50724	4	3	0.859375	1	Expectation not disrupted/Congruent and incongruent type match
+sound350	NPC_dolls.wav	My	sister	plays	with	Barbie	dolls.	n/a	n/a	doll	2.638143	2.190841	2.584836	0.393995	4	3	0.984375	2	Expecting a plural
+sound351	(LD5_Eliminated)NPI_rings(style).wav	Before	school	starts	the	bell	style.	n/a	n/a	bell	2.946599	2.369586	2.923593	0.554007	4	2	0.954887218	5	Does not match on syllable
+sound352	NPC_fly.wav	She	swatted	the	fly.	n/a	n/a	n/a	n/a	fly	1.943741	1.393142	1.9207	0.527558	4	3	0.88976378	1	Expectation not disrupted/Congruent and incongruent type match
+sound353	NPI_fake(crust).wav	The	diamond	was	not	real	it	was	crust.	fake	3.602834	3.047936	3.549409	0.501473	4	2	0.893939394	3	Adjective then noun
+sound354	NPI_pink(door).wav	Pigs	are	colored	door.	n/a	n/a	n/a	n/a	pink	1.831882	1.391996	1.787131	0.395135	4	2	0.9375	3	Adjective then noun
+sound355	NPC_plank.wav	The	pirate	said	walk	the	plank!	n/a	n/a	plank	2.662358	2.193039	2.620635	0.427596	4	1	0.939849624	1	Expectation not disrupted/Congruent and incongruent type match
+sound356	NPI_steal(earth).wav	A	thief	likes	to	earth.	n/a	n/a	n/a	thief	2.13381	1.684111	2.126227	0.442116	4	2	0.953488372	4	Verb then noun
+sound357	NPC_fingers.wav	On	one	hand	I	have	five	fingers.	n/a	five	3.114694	2.602003	3.079941	0.477938	4	3	0.992248062	2	Expecting a plural
+sound358	NPC_deep.wav	The	pool	was	six	feet	deep.	n/a	n/a	deep	2.653968	2.255567	2.595411	0.339844	4	1	0.917910448	3	Adjective/adverb then noun
+sound359	(LD5_Eliminated)NPI_chain(flood).wav	Prisoners	walk	with	a	ball	and	flood.	n/a	chain	3.084263	2.633831	3.037537	0.403706	4	2	0.968992248	5	Cultural and hyphened noun
+sound360	(LD5_Eliminated)NPI_cut(boat).wav	I	got	a	hair	boat.	n/a	n/a	n/a	cut	2.048594	1.686105	2.031325	0.34522	4	2	0.858208955	5	Haircut is a single words
+sound361	NPC_blinking.wav	She	lost	the	staring	contest	by	blinking.	n/a	blink	3.341882	2.813529	3.271484	0.457955	4	1	0.8828125	4	Verb then noun
+sound362	NPC_dust.wav	The	old	table	was	covered	in	dust.	n/a	dust	3.052971	2.569446	3.020941	0.451495	4	3	0.46969697	4	Noun then verb
+sound363	NPC_whales.wav	The	biggest	animals	in	the	sea	are	whales.	whale	3.545873	3.073658	3.527152	0.453494	4	1	0.992248062	2	Expecting a plural
+sound364	NPI_frog(glove).wav	Ribbit	goes	the	glove.	n/a	n/a	n/a	n/a	frog	1.864059	1.400091	1.814835	0.414744	4	2	0.946969697	1	Expectation not disrupted/Congruent and incongruent type match
+sound365	NPC_gone.wav	The	cookies	were	eaten	until	they	were	gone.	gone/eat	3.666304	3.15864	3.583015	0.424375	4	3	0.946969697	4	Verb then noun
+sound366	NPC_brown.wav	A	tree	trunk	is	colored	brown.	n/a	n/a	brown	2.613764	2.128389	2.585422	0.457033	4	3	0.925373134	3	Adjective then noun
+sound367	(LD5_Eliminated)NPC_water.wav	The	boat	floats	on	the	water.	n/a	n/a	float/boat	2.401474	1.937019	2.358308	0.421289	4	3	0.682170543	5	Does not match on syllable
+sound368	NPI_grade(grill).wav	In	school	he	is	in	first	grill.	n/a	grade	3.063719	2.587549	3.027064	0.439515	4	2	0.791044776	1	Expectation not disrupted/Congruent and incongruent type match
+sound369	(LD5_Eliminated)NPI_bench(grade).wav	He	liked	to	sit	on	the	park	grade.	bench	3.441905	2.969294	3.401216	0.431922	4	2	0.96124031	5	Grade of this hill could make sense
+sound370	NPC_flip.wav	On	the	trampoline	he	did	a	flip.	n/a	flip	3.070454	2.59042	3.045628	0.455208	4	3	0.803030303	3	Noun then adjective
+sound371	NPI_candles(planet).wav	She	blew	out	the	birthday	planet.	n/a	n/a	blow	2.806372	2.251489	2.749393	0.497904	4	2	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound372	NPC_bushes.wav	Outside	a	man	trimmed	the	bushes.	n/a	n/a	bush	2.811066	2.267614	2.753648	0.486034	4	3	0.265151515	1	Expectation not disrupted/Congruent and incongruent type match
+sound373	NPC_bread.wav	She	baked	a	loaf	of	bread.	n/a	n/a	bread	2.552948	2.189117	2.497224	0.308107	4	3	0.992248062	1	Expectation not disrupted/Congruent and incongruent type match
+sound374	NPI_wear(chief).wav	She	had	no	clothes	to	chief.	n/a	n/a	wear	2.624172	2.143972	2.584028	0.440056	4	2	0.891472868	4	Verb then noun
+sound375	NPI_earth(rose).wav	We	live	on	planet	rose.	n/a	n/a	n/a	earth	2.296508	1.771092	2.270667	0.499575	4	4	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound376	NPI_cat(spray).wav	Meow	goes	the	spray.	n/a	n/a	n/a	n/a	cat	2.057483	1.407357	2.020495	0.613138	4	4	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound377	NPI_stove(kid).wav	He	burned	his	hand	on	the	kid.	n/a	stove/burn	3.051814	2.609053	3.031299	0.422246	4	2	0.787878788	1	Expectation not disrupted/Congruent and incongruent type match
+sound378	NPI_coat(loaf).wav	I	put	on	my	rain	loaf.	n/a	n/a	coat	2.482812	2.051155	2.444655	0.3935	4	2	0.757575758	1	Expectation not disrupted/Congruent and incongruent type match
+sound379	NPC_clouds.wav	In	the	sky	are	white	fluffy	clouds.	n/a	cloud	3.203832	2.581936	3.154159	0.572223	4	3	0.97761194	1	Expectation not disrupted/Congruent and incongruent type match
+sound380	NPI_one(cold).wav	First	place	is	number	cold.	n/a	n/a	n/a	one	2.309637	1.85017	2.258141	0.407971	4	4	1	3	Noun then adjective
+sound381	NPC_arm.wav	I	have	two	legs	and	two	arms.	n/a	arm/two	3.066213	2.54532	3.026494	0.481174	4	3	0.837209302	2	Expecting a plural
+sound382	NPC_cap.wav	He	screwed	off	the	bottle	cap.	n/a	n/a	cap	2.514717	2.130172	2.48615	0.355978	4	1	0.736434109	1	Expectation not disrupted/Congruent and incongruent type match
+sound383	NPI_out(ant).wav	Three	strikes	and	you	are	ant.	n/a	n/a	strike	2.741565	2.318062	2.718208	0.400146	4	2	0.976744186	4	Grammatically incorrect
+sound384	NPC_fist.wav	I	punched	the	bag	with	my	fist.	n/a	fist	3.031746	2.479876	2.995024	0.515148	4	3	0.90625	1	Expectation not disrupted/Congruent and incongruent type match
+sound385	NPI_lawn(weight).wav	My	dad	mows	the	weight.	n/a	n/a	n/a	grass(lawn)	2.275737	1.832771	2.246317	0.413546	4	2	0.887218045	1	Expectation not disrupted/Congruent and incongruent type match
+sound386	NPC_bath.wav	To	get	clean	I	take	a	bath.	n/a	bath	2.85449	2.48257	2.792769	0.310199	4	3	0.418604651	1	Expectation not disrupted/Congruent and incongruent type match
+sound387	NPI_flop(toy).wav	At	the	pool	he	did	a	belly	toy.	flop	3.461814	2.9136	3.388253	0.474653	4	2	0.955223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound388	NPC_dirt.wav	Worms	crawl	in	the	dirt.	n/a	n/a	n/a	dirt	2.055147	1.69166	2.015372	0.323712	4	1	0.572519084	1	Expectation not disrupted/Congruent and incongruent type match
+sound389	NPI_fork(cleats).wav	He	eats	steak	with	a	knife	and	cleats.	fork/food	3.428186	2.945189	3.393227	0.448038	4	2	0.992537313	1	Expectation not disrupted/Congruent and incongruent type match
+sound390	NPI_wind(cheese).wav	My	hair	was	blown	by	the	cheese.	n/a	wind	3.337959	2.753293	3.287199	0.533906	4	2	0.955223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound391	NPC_skunk.wav	His	dog	was	sprayed	by	a	skunk.	n/a	spray	3.183628	2.695601	3.16521	0.469609	4	3	0.622047244	1	Expectation not disrupted/Congruent and incongruent type match
+sound392	NPI_cane(fin).wav	The	old	man	walked	with	a	fin.	n/a	cane	3.008685	2.535124	2.994177	0.459053	4	2	0.651162791	1	Expectation not disrupted/Congruent and incongruent type match
+sound393	NPI_eats(ball).wav	The	baby	wears	a	bib	when	he	ball.	bib/eat	3.490726	3.09297	3.472225	0.379255	4	2	0.96969697	4	Verb then noun
+sound394	NPC_solve.wav	He	had	a	mystery	to	solve.	n/a	n/a	solve	2.701746	2.211672	2.661919	0.450247	4	3	0.914728682	4	Verb then noun
+sound395	NPI_door(smoke).wav	He	shut	the	smoke.	n/a	n/a	n/a	n/a	shut	1.601882	1.197628	1.568816	0.371188	4	2	0.945736434	1	Expectation not disrupted/Congruent and incongruent type match
+sound396	NPI_apple(balloon).wav	His	favorite	fruit	was	a	red	crisp	balloon.	apple	3.803991	3.21184	3.770079	0.558239	4	4	0.984375	1	Expectation not disrupted/Congruent and incongruent type match
+sound397	NPI_blue(arm).wav	The	color	of	the	sky	is	arm.	n/a	blue	2.951429	2.533545	2.924878	0.391333	4	2	0.985074627	3	Adjective then noun
+sound398	NPI_whales(dress).wav	The	biggest	animals	in	the	sea	are	dress.	whale	3.532766	3.078212	3.514169	0.435957	4	2	0.992248062	2	Expecting a plural
+sound399	NPC_claws.wav	The	cat	has	sharp	claws.	n/a	n/a	n/a	claw	2.063515	1.61667	2.032381	0.415711	4	3	0.848484848	2	Expecting a plural
+sound400	NPC_tear.wav	Down	the	sad	woman's	cheek	came	a	tear.	tear/cheek	3.729229	3.277872	3.702757	0.424885	4	3	0.984962406	1	Expectation not disrupted/Congruent and incongruent type match
+sound401	NPC_wood.wav	He	chopped	the	wood.	n/a	n/a	n/a	n/a	chop	1.59381	1.179593	1.565058	0.385465	4	3	0.455223881	1	Expectation not disrupted/Congruent and incongruent type match
+sound402	NPC_down.wav	She	told	me	to	calm	down.	n/a	n/a	calm	2.60254	2.156275	2.560725	0.40445	4	3	0.968992248	3	Adjective/adverb then noun
+sound403	NPC_earth.wav	We	live	on	planet	earth.	n/a	n/a	n/a	earth	2.200726	1.770824	2.170968	0.400144	4	3	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound404	NPC_apple.wav	His	favorite	fruit	was	a	red	crisp	apple.	apple	3.70712	3.216841	3.672811	0.45597	4	3	0.984375	1	Expectation not disrupted/Congruent and incongruent type match
+sound405	NPC_bag.wav	He	puts	his	lunch	in	a	paper	bag.	bag	3.655578	3.211044	3.5949	0.383856	4	3	0.930232558	1	Expectation not disrupted/Congruent and incongruent type match
+sound406	NPC_fight.wav	The	angry	boys	got	in	a	fight.	n/a	fight	2.95585	2.466949	2.928027	0.461078	4	3	0.953488372	1	Expectation not disrupted/Congruent and incongruent type match
+sound407	NPI_goal(hair).wav	The	soccer	team	scored	a	hair.	n/a	n/a	goal	2.40381	1.949594	2.373061	0.423467	4	2	0.9453125	1	Expectation not disrupted/Congruent and incongruent type match
+sound408	NPC_dress.wav	The	bride	wears	a	white	dress.	n/a	n/a	dress/bride	2.826259	2.311015	2.792457	0.481442	4	3	0.753731343	3	Noun then adjective
+sound409	NPI_deep(bone).wav	The	pool	was	six	feet	bone.	n/a	n/a	deep	2.785034	2.268656	2.725201	0.456545	4	2	0.917910448	3	Adjective/adverb then noun
+sound410	NPI_nine(cat).wav	The	number	before	ten	is	cat.	n/a	n/a	nine	2.66327	2.231519	2.623075	0.391556	4	2	0.984848485	1	Expectation not disrupted/Congruent and incongruent type match
+sound411	NPC_popped.wav	The	water	balloon	was	so	full	it	popped.	burst(popped)	3.610567	3.126441	3.576774	0.450333	4	3	0.15503876	4	Verb then noun
+sound412	NPI_dream(lawn).wav	She	woke	up	after	a	bad	lawn.	n/a	dream	2.992063	2.514349	2.946046	0.431697	4	2	0.798449612	1	Expectation not disrupted/Congruent and incongruent type match
+sound413	NPC_catch.wav	I	throw	and	you	catch.	n/a	n/a	n/a	catch/throw	1.937052	1.575544	1.918776	0.343232	4	3	0.985074627	4	Verb then noun
+sound414	NPC_nests.wav	Birds	like	to	build	nests.	n/a	n/a	n/a	build	2.035125	1.578143	2.022098	0.443955	4	3	1	2	Expecting a plural
+sound415	NPC_bus.wav	To	school	I	ride	the	yellow	bus.	n/a	bus	2.967596	2.581879	2.951275	0.369396	4	3	0.976744186	1	Expectation not disrupted/Congruent and incongruent type match
+sound416	NPI_dirt(screw).wav	Worms	crawl	in	the	screw.	n/a	n/a	n/a	dirt	2.198413	1.666301	2.156498	0.490197	4	2	0.572519084	1	Expectation not disrupted/Congruent and incongruent type match
+sound417	NPI_plank(shark).wav	The	pirate	said	walk	the	shark.	n/a	n/a	plank	2.66483	2.184416	2.616056	0.43164	4	2	0.939849624	1	Expectation not disrupted/Congruent and incongruent type match
+sound418	NPC_fixed.wav	The	toy	broke	and	needed	to	be	fixed.	fix	3.372857	2.837825	3.341252	0.503427	4	3	0.813953488	4	Verb then noun
+sound419	NPI_fall(duck).wav	After	summer	is	duck.	n/a	n/a	n/a	n/a	fall	1.950998	1.533298	1.938323	0.405025	4	2	0.798449612	1	Expectation not disrupted/Congruent and incongruent type match
+sound420	NPC_couch.wav	I	watch	tv	and	sit	on	the	couch.	couch	3.657755	3.223034	3.633878	0.410844	4	3	0.860465116	1	Expectation not disrupted/Congruent and incongruent type match
+sound421	NPC_gum.wav	He	is	chewing	bubble	gum.	n/a	n/a	n/a	gum	2.135034	1.744923	2.097854	0.352931	4	3	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound422	NPI_blinking(belly).wav	She	lost	the	staring	contest	by	belly.	n/a	blink	3.183129	2.812434	3.163218	0.350784	4	2	0.8828125	4	Verb then noun
+sound423	NPC_glass.wav	Windows	are	made	of	glass.	n/a	n/a	n/a	glass	2.261882	1.788432	2.227945	0.439513	4	3	1	1	Expectation not disrupted/Congruent and incongruent type match
+sound424	NPC_candles.wav	She	blew	out	the	birthday	candles.	n/a	n/a	blow	2.851542	2.25633	2.789467	0.533137	4	3	0.968992248	1	Expectation not disrupted/Congruent and incongruent type match
+sound425	NPC_bones.wav	The	Museum	showed	dinosaur	bones.	n/a	n/a	n/a	bone	2.362313	1.948396	2.345435	0.397039	4	3	0.609375	1	Expectation not disrupted/Congruent and incongruent type match
+sound426	NPI_guess(grape).wav	On	an	answer	he	made	a	lucky	grape.	guess	3.179705	2.776206	3.124677	0.348471	4	2	0.970149254	1	Expectation not disrupted/Congruent and incongruent type match
+sound427	NPI_game(coal).wav	His	dad	watches	the	football	coal.	n/a	n/a	game	2.755374	2.26946	2.726201	0.456741	4	2	0.829457364	1	Expectation not disrupted/Congruent and incongruent type match
+sound428	NPC_outside.wav	He	put	on	his	shoes	to	go	outside.	boot(shoes)	3.642766	2.974371	3.601758	0.627387	4	3	0.583333333	3	Adjective then noun
+sound429	NPC_cribs.wav	Babies	sleep	in	cribs.	n/a	n/a	n/a	n/a	crib	2.06771	1.518889	2.032018	0.513129	4	3	0.694029851	2	Expecting a plural
+sound430	NPI_study(princess).wav	He	failed	the	test	because	he	didn't	princess.	fail	3.615397	3.016704	3.577256	0.560552	4	2	0.875968992	4	Verb then noun
+sound431	NPC_one.wav	First	place	is	number	one.	n/a	n/a	n/a	one	2.252834	1.776537	2.20945	0.432913	4	3	1	3	Noun then adjective
+sound432	NPI_crafts(tank).wav	I	like	arts	and	tank.	n/a	n/a	n/a	craft	2.251156	1.762198	2.217285	0.455087	4	2	0.924242424	1	Expectation not disrupted/Congruent and incongruent type match
+sound433	NPI_pictures(contest).wav	I	like	to	draw	contest.	n/a	n/a	n/a	draw	2.532676	2.091008	2.521239	0.430231	4	2	0.604651163	2	Expecting a plural
+sound434	NPI_cheese(clock).wav	Her	favorite	food	is	mac	and	clock.	n/a	cheese	2.986916	2.543589	2.952787	0.409198	4	2	0.985074627	1	Expectation not disrupted/Congruent and incongruent type match
+sound435	(LD5_Eliminated)NPI_warm(skunk).wav	The	water	was	luke	skunk.	n/a	n/a	n/a	warmth	2.195125	1.642697	2.127176	0.484479	4	2	0.984615385	5	Kids may not know what "luke warm" is
+sound436	(LD5_Eliminated)NPI_pole(ring).wav	Santa	lives	at	the	north	ring.	n/a	n/a	pole	2.845397	2.344585	2.794551	0.449966	4	2	1	5	Cultural and repeated incongruent target word
+sound437	NPI_brakes(cob).wav	The	car	stopped	with	its	cob.	n/a	n/a	brake	2.517642	2.067598	2.482517	0.414919	4	2	0.962121212	1	Expectation not disrupted/Congruent and incongruent type match
+sound438	NPI_grill(heart).wav	He	cooked	hotdogs	outside	on	the	heart.	n/a	grill	2.557914	2.096051	2.374922	0.278871	4	2	0.878787879	1	Expectation not disrupted/Congruent and incongruent type match
+sound439	NPI_coach(goose).wav	I	was	taught	by	my	soccer	goose.	n/a	coach	3.11966	2.601064	3.069633	0.468569	4	2	0.910447761	1	Expectation not disrupted/Congruent and incongruent type match
+sound440	(LD5_Eliminated)NPI_coal(chain).wav	Santa	gives	bad	kids	chain.	n/a	n/a	n/a	coal	2.290023	1.824961	2.282765	0.457804	4	2	0.92481203	5	Cultural
+Ex1	NPI_cup(flag).wav	I	drink	from	a	flag.	n/a	n/a	n/a	cup/drink	2.179048	1.680898	2.148031	0.467133	n/a	3	0.441860465	1	Expectation not disrupted/Congruent and incongruent type match
+Ex2	NPC_cake.wav	He	baked	a	birthday	cake.	n/a	n/a	n/a	cake	2.031814	1.598028	1.976087	0.378059	n/a	2	1	1	Expectation not disrupted/Congruent and incongruent type match
