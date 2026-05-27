@@ -7,11 +7,13 @@ import pandas as pd
 
 
 BASE_DIR = Path(__file__).resolve().parent
+REPO_DIR = BASE_DIR.parent
+LEXICON_DIR = REPO_DIR / "stimuli" / "lexicons"
 
-VALENCE_FILE = BASE_DIR / "valence-NRC-VAD-Lexicon-v2.1.txt"
-AROUSAL_FILE = BASE_DIR / "arousal-NRC-VAD-Lexicon-v2.1.txt"
-DOMINANCE_FILE = BASE_DIR / "dominance-NRC-VAD-Lexicon-v2.1.txt"
-EMOTION_FILE = BASE_DIR / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
+VALENCE_FILE = LEXICON_DIR / "valence-NRC-VAD-Lexicon-v2.1.txt"
+AROUSAL_FILE = LEXICON_DIR / "arousal-NRC-VAD-Lexicon-v2.1.txt"
+DOMINANCE_FILE = LEXICON_DIR / "dominance-NRC-VAD-Lexicon-v2.1.txt"
+EMOTION_FILE = LEXICON_DIR / "NRC-Emotion-Lexicon-Wordlevel-v0.92.txt"
 
 EMOTION_CATEGORIES = [
     "anger",
