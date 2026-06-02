@@ -1,38 +1,105 @@
 import argparse
-import pandas as pd
+from typing import Optional
+
 import numpy as np
+import pandas as pd
 
 
-def zscore(x):
-    x = pd.to_numeric(x, errors="coerce")
-    return (x - x.mean()) / x.std() if x.std() not in [0, np.nan] else x * 0
+HUMAN_CP_COLUMN_CANDIDATES = [
+    "cloze_probability",
+    "cloze-probability%_div",
+    "human_cloze_probability",
+    "human_cp",
+    "cloze",
+    "cp",
+]
+
+LLM_CP_COLUMN_CANDIDATES = [
+    "llm_cloze_probability",
+    "llm_cp",
+    "model_cloze_probability",
+    "gpt_cloze_probability",
+    "llm_probability",
+]
+
+
+def normalise_column_name(name: str) -> str:
+    return str(name).strip().lower().replace(" ", "_")
+
+
+def find_column(df: pd.DataFrame, candidates: list[str]) -> Optional[str]:
+    normalised_map = {
+        normalise_column_name(col): col
+        for col in df.columns
+    }
+
+    for candidate in candidates:
+        candidate_norm = normalise_column_name(candidate)
+
+        if candidate_norm in normalised_map:
+            return normalised_map[candidate_norm]
+
+    return None
+
+
+def zscore(series: pd.Series) -> pd.Series:
+    values = pd.to_numeric(series, errors="coerce")
+    std = values.std(skipna=True)
+
+    if std == 0 or np.isnan(std):
+        return values * 0
+
+    return (values - values.mean(skipna=True)) / std
+
+
+def add_cloze_metrics(out: pd.DataFrame) -> pd.DataFrame:
+    human_cp_col = find_column(out, HUMAN_CP_COLUMN_CANDIDATES)
+    llm_cp_col = find_column(out, LLM_CP_COLUMN_CANDIDATES)
+
+    if human_cp_col is not None:
+        out["human_cp"] = pd.to_numeric(
+            out[human_cp_col],
+            errors="coerce",
+        )
+        out["z_human_cp"] = zscore(out["human_cp"])
+        out["human_unexpectedness"] = 1 - out["human_cp"]
+
+    if llm_cp_col is not None:
+        out["llm_cp"] = pd.to_numeric(
+            out[llm_cp_col],
+            errors="coerce",
+        )
+
+    elif "target_surprisal_bits" in out.columns:
+        out["llm_cp"] = 2 ** (
+            -pd.to_numeric(out["target_surprisal_bits"], errors="coerce")
+        )
+
+    if "llm_cp" in out.columns:
+        out["z_llm_cp"] = zscore(out["llm_cp"])
+        out["llm_unexpectedness"] = 1 - out["llm_cp"]
+
+    if "human_cp" in out.columns and "llm_cp" in out.columns:
+        out["cp_difference_human_minus_llm"] = (
+            out["human_cp"] - out["llm_cp"]
+        )
+        out["abs_cp_disagreement"] = (
+            out["cp_difference_human_minus_llm"].abs()
+        )
+
+    return out
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_csv")
-    parser.add_argument("--human-cp-col", default="human_cloze_probability")
-    parser.add_argument("--llm-cp-col", default="llm_cloze_probability")
-    parser.add_argument("--output", default="language_outputs/cloze_metrics.csv")
+    parser.add_argument("input_tsv")
+    parser.add_argument("--output", default="language_outputs/cloze_metrics.tsv")
     args = parser.parse_args()
 
-    df = pd.read_csv(args.input_csv)
+    df = pd.read_csv(args.input_tsv, sep="\t")
+    out = add_cloze_metrics(df)
 
-    if args.human_cp_col in df.columns:
-        df["human_cp"] = pd.to_numeric(df[args.human_cp_col], errors="coerce")
-        df["z_human_cp"] = zscore(df["human_cp"])
-        df["human_unexpectedness"] = 1 - df["human_cp"]
-
-    if args.llm_cp_col in df.columns:
-        df["llm_cp"] = pd.to_numeric(df[args.llm_cp_col], errors="coerce")
-        df["z_llm_cp"] = zscore(df["llm_cp"])
-        df["llm_unexpectedness"] = 1 - df["llm_cp"]
-
-    if "human_cp" in df.columns and "llm_cp" in df.columns:
-        df["cp_difference_human_minus_llm"] = df["human_cp"] - df["llm_cp"]
-        df["abs_cp_disagreement"] = df["cp_difference_human_minus_llm"].abs()
-
-    df.to_csv(args.output, index=False)
+    out.to_csv(args.output, sep="\t", index=False)
     print(f"Saved: {args.output}")
 
 

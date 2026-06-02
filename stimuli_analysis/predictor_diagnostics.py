@@ -6,11 +6,11 @@ from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("input_csv")
+    parser.add_argument("input_tsv")
     parser.add_argument("--output-prefix", default="language_outputs/predictor_diagnostics")
     args = parser.parse_args()
 
-    df = pd.read_csv(args.input_csv)
+    df = pd.read_csv(args.input_tsv, sep="\t")
 
     diagnostic_predictors = [
         "human_cp",
@@ -53,7 +53,7 @@ def main():
     numeric = numeric.fillna(numeric.mean())
 
     corr = numeric.corr()
-    corr.to_csv(args.output_prefix + "_correlations.csv")
+    corr.to_csv(args.output_prefix + "_correlations.tsv", sep="\t")
 
     vif_rows = []
 
@@ -75,7 +75,7 @@ def main():
         ascending=False,
     )
 
-    vif_df.to_csv(args.output_prefix + "_vif.csv", index=False)
+    vif_df.to_csv(args.output_prefix + "_vif.tsv", sep="\t", index=False)
 
     print("Saved correlation and VIF diagnostics.")
     print("Predictors used:")

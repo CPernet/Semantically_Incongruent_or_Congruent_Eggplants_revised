@@ -37,11 +37,11 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("input_csv")
     parser.add_argument("--text-col", default="sentence")
-    parser.add_argument("--output", default="language_outputs/syntax_metrics.csv")
+    parser.add_argument("--output", default="language_outputs/syntax_metrics.tsv")
     parser.add_argument("--model", default="en_core_web_sm")
     args = parser.parse_args()
 
-    df = pd.read_csv(args.input_csv)
+    df = pd.read_csv(args.input_tsv, sep="\t")
     nlp = spacy.load(args.model)
 
     rows = []
@@ -51,7 +51,7 @@ def main():
     syntax_df = pd.DataFrame(rows)
     out = pd.concat([df.reset_index(drop=True), syntax_df], axis=1)
 
-    out.to_csv(args.output, index=False)
+    out.to_csv(args.output, sep="\t", index=False)
     print(f"Saved: {args.output}")
 
 
