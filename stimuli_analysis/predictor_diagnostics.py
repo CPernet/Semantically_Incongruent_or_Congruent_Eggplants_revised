@@ -52,11 +52,11 @@ def main():
 
     numeric = numeric.fillna(numeric.mean())
 
-    numeric = (numeric - numeric.mean()) / numeric.std()
-    numeric = sm.add_constant(numeric)
-
     corr = numeric.corr()
     corr.to_csv(args.output_prefix + "_correlations.tsv", sep="\t")
+
+    numeric = (numeric - numeric.mean()) / numeric.std()
+    numeric = sm.add_constant(numeric)
 
     vif_rows = []
 

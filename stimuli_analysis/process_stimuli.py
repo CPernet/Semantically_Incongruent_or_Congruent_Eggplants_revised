@@ -489,14 +489,14 @@ def save_predictor_diagnostics(df: pd.DataFrame, output_prefix: Path) -> None:
 
     numeric = numeric.fillna(numeric.mean())
 
-    numeric = (numeric - numeric.mean()) / numeric.std()
-    numeric = sm.add_constant(numeric)
-
     corr = numeric.corr()
     corr.to_csv(
         str(output_prefix) + "_correlations.tsv",
         sep="\t"
     )
+
+    numeric = (numeric - numeric.mean()) / numeric.std()
+    numeric = sm.add_constant(numeric)
 
     vif_rows = []
 
