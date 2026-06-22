@@ -303,9 +303,6 @@ def detect_condition_column(df: pd.DataFrame) -> Optional[str]:
 def detect_text_column(df: pd.DataFrame) -> Optional[str]:
     """
     Detect the real stimulus/sentence column.
-
-    Important:
-        Never return condition/congruency columns as text.
     """
     condition_col = detect_condition_column(df)
 
@@ -540,7 +537,6 @@ def should_skip_file(path: Path) -> bool:
     full = str(path).lower()
 
     # Skip cloze-survey metadata JSON.
-    # This file describes the task; it is not a trial/stimulus table.
     if name.endswith("cloze-probability-survey.json"):
         return True
 
@@ -715,13 +711,13 @@ def prepare_n400_specific_columns(df: pd.DataFrame) -> pd.DataFrame:
 
     return df
 
-def process_table(
+def start_processing_table(
     df: pd.DataFrame,
     source_file: Path,
-    surprisal_model: SurprisalModel,
-    semantic_model: SentenceMetrics,
-    syntax_model,
-) -> Optional[pd.DataFrame]:
+) -> Optional[tuple[pd.DataFrame, str, Optional[str], Optional[str], Optional[str]]]:
+    """
+    Step 1: Prepare the stimulus table and detect the important columns.
+    """
 
     if df.empty:
         log.warning("Skipping empty file: %s", source_file)
@@ -767,6 +763,20 @@ def process_table(
     if "sentence_id" not in out.columns:
         out["sentence_id"] = np.arange(1, len(out) + 1)
 
+    return out, text_col, target_col, context_col, condition_col
+
+
+def add_sentence_target_context_columns(
+    out: pd.DataFrame,
+    source_file: Path,
+    text_col: str,
+    target_col: Optional[str],
+    context_col: Optional[str],
+) -> pd.DataFrame:
+    """
+    Step 2: Create the shared columns used by all later predictors.
+    """
+
     for idx, row in out.iterrows():
         sentence = str(row[text_col]).strip()
 
@@ -797,8 +807,32 @@ def process_table(
         out.at[idx, "n_words_sentence"] = len(sentence.split())
         out.at[idx, "target_n_letters"] = len(target)
 
+    return out
+
+
+def add_lexical_frequency_features(out: pd.DataFrame) -> pd.DataFrame:
+    """Step 3: Add word-frequency predictors for the target word."""
+
+    for idx, row in out.iterrows():
+        target = row.get("target_word_used")
+
+        if pd.isna(target):
+            continue
+
         out.at[idx, "target_zipf_frequency"] = get_zipf_frequency(target)
         out.at[idx, "target_raw_frequency"] = get_word_frequency(target)
+
+    return out
+
+
+def add_phonology_features(out: pd.DataFrame) -> pd.DataFrame:
+    """Step 4: Add phonological predictors for the target word."""
+
+    for idx, row in out.iterrows():
+        target = row.get("target_word_used")
+
+        if pd.isna(target):
+            continue
 
         phon = get_phonology_for_word(target)
 
@@ -806,7 +840,38 @@ def process_table(
         out.at[idx, "target_n_syllables"] = phon.get("n_syllables")
         out.at[idx, "target_onset_phoneme"] = phon.get("onset_phoneme")
 
+    return out
+
+
+def add_target_emotion_features(out: pd.DataFrame) -> pd.DataFrame:
+    """Step 5: Add emotion, valence, arousal, and dominance predictors."""
+
+    for idx, row in out.iterrows():
+        target = row.get("target_word_used")
+
+        if pd.isna(target):
+            continue
+
         add_emotion_features(out, idx, target)
+
+    return out
+
+
+def add_surprisal_features(
+    out: pd.DataFrame,
+    source_file: Path,
+    text_col: str,
+    surprisal_model: SurprisalModel,
+) -> pd.DataFrame:
+    """Step 6: Add language-model surprisal and sentence perplexity."""
+
+    for idx, row in out.iterrows():
+        sentence = str(row[text_col]).strip()
+        target = row.get("target_word_used")
+        context = row.get("context_used")
+
+        if pd.isna(target) or not looks_like_sentence(sentence):
+            continue
 
         try:
             if context:
@@ -844,6 +909,23 @@ def process_table(
             out.at[idx, "sentence_mean_surprisal"] = np.nan
             out.at[idx, "sentence_perplexity"] = np.nan
 
+    return out
+
+
+def add_semantic_similarity_features(
+    out: pd.DataFrame,
+    source_file: Path,
+    semantic_model: SentenceMetrics,
+) -> pd.DataFrame:
+    """Step 7: Add context-target semantic similarity."""
+
+    for idx, row in out.iterrows():
+        target = row.get("target_word_used")
+        context = row.get("context_used")
+
+        if pd.isna(target):
+            continue
+
         try:
             if context:
                 out.at[idx, "context_target_similarity"] = (
@@ -861,6 +943,23 @@ def process_table(
             )
             out.at[idx, "context_target_similarity"] = np.nan
 
+    return out
+
+
+def add_syntax_features(
+    out: pd.DataFrame,
+    source_file: Path,
+    text_col: str,
+    syntax_model,
+) -> pd.DataFrame:
+    """Step 8: Add syntactic complexity predictors for the sentence."""
+
+    for idx, row in out.iterrows():
+        sentence = str(row[text_col]).strip()
+
+        if not looks_like_sentence(sentence):
+            continue
+
         try:
             syntax = compute_syntax(sentence, syntax_model)
 
@@ -874,6 +973,12 @@ def process_table(
                 source_file,
                 e,
             )
+
+    return out
+
+
+def add_derived_predictor_features(out: pd.DataFrame) -> pd.DataFrame:
+    """Step 9: Add z-scores and derived context-shift predictors."""
 
     if "target_surprisal_bits" in out.columns:
         out["z_target_surprisal"] = zscore(out["target_surprisal_bits"])
@@ -895,7 +1000,45 @@ def process_table(
     if "context_target_similarity" in out.columns:
         out["prior_context_strength"] = out["context_target_similarity"]
 
-    out = add_cloze_metrics(out)
+    return out
+
+
+def add_final_cloze_features(out: pd.DataFrame) -> pd.DataFrame:
+    """Step 10: Add human and LLM cloze-probability metrics."""
+
+    return add_cloze_metrics(out)
+
+
+def process_table(
+    df: pd.DataFrame,
+    source_file: Path,
+    surprisal_model: SurprisalModel,
+    semantic_model: SentenceMetrics,
+    syntax_model,
+) -> Optional[pd.DataFrame]:
+
+    prepared = start_processing_table(df, source_file)
+
+    if prepared is None:
+        return None
+
+    out, text_col, target_col, context_col, condition_col = prepared
+
+    out = add_sentence_target_context_columns(
+        out=out,
+        source_file=source_file,
+        text_col=text_col,
+        target_col=target_col,
+        context_col=context_col,
+    )
+    out = add_lexical_frequency_features(out)
+    out = add_phonology_features(out)
+    out = add_target_emotion_features(out)
+    out = add_surprisal_features(out, source_file, text_col, surprisal_model)
+    out = add_semantic_similarity_features(out, source_file, semantic_model)
+    out = add_syntax_features(out, source_file, text_col, syntax_model)
+    out = add_derived_predictor_features(out)
+    out = add_final_cloze_features(out)
 
     return out
 
