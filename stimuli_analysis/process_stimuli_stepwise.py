@@ -14,20 +14,23 @@ import pandas as pd
 import spacy
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
-from surprisal import SurprisalModel
-from sentence_metrics import SentenceMetrics
-from word_frequency import get_zipf_frequency, get_word_frequency
-from phonology import get_phonology_for_word
-from syntax_metrics import compute_syntax
-from cloze_metrics import add_cloze_metrics
+from stimuli_analysis.surprisal import SurprisalModel
+from stimuli_analysis.sentence_metrics import SentenceMetrics
+from stimuli_analysis.word_frequency import (
+    get_zipf_frequency,
+    get_word_frequency,
+)
+from stimuli_analysis.phonology import get_phonology_for_word
+from stimuli_analysis.syntax_metrics import compute_syntax
+from stimuli_analysis.cloze_metrics import add_cloze_metrics
 
 try:
-    from emotion import get_emotion_features
+    from stimuli_analysis.emotion import get_emotion_features
 except ImportError:
     get_emotion_features = None
 
 try:
-    from emotion import get_valence
+    from stimuli_analysis.emotion import get_valence
 except ImportError:
     get_valence = None
 
